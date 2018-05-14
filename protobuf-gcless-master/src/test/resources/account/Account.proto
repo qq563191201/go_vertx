@@ -1,0 +1,16 @@
+
+option java_package = "com.gtshgame.common.msg.protobuf";
+//消息格式
+//|G|S|--4字节总长度=sizeof(Head)+body.size)--|--4字节muuid--|--4字节消息id--|--pb消息数据...--|
+message Account {
+	//+ get
+    //-> AccountReslut
+	optional string username = 1;//用户名
+	optional string password = 2;//密码
+	optional int32 platform = 3[default=0];//平台
+	optional int32 sign = 4[default=0];//0登录1注册
+}
+message AccountReslut{
+	optional bool issucc = 1 [default=false] ; // true 表示成功 false 表示失败
+	optional string msg = 2;//返回信息
+}

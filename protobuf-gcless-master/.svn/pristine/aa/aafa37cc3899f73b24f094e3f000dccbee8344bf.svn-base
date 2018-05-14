@@ -1,0 +1,21 @@
+
+option java_package = "com.gojava.msg.protobuf";
+
+message VipChargeInfo {
+	//+ get
+    //-> VipChargeInfoReslut
+	
+}
+message VipChargeInfoReslut{
+	repeated VipInfo vipInfo = 1;//vip信息列表
+}
+message VipInfo{
+	optional string vip = 1;//vip等级
+	optional string name = 2;//vip名称
+	repeated VipMoneyInfo vipMoneyInfo = 3;//充值信息列表
+}
+message VipMoneyInfo{
+	optional string day = 1;//天
+	optional string money = 2;//价格
+	optional int32 id = 3;//id
+}

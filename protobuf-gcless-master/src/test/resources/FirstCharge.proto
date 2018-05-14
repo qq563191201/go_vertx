@@ -1,0 +1,14 @@
+
+option java_package = "com.gojava.msg.protobuf";
+//消息格式
+//|G|S|--4字节总长度=sizeof(Head)+body.size)--|--4字节muuid--|--4字节消息id--|--pb消息数据...--|
+message FirstCharge {
+	//+ get
+    //-> FirstChargeReslut
+	required int32 userId = 1;//用户id
+}
+message FirstChargeReslut{
+	required int32 state = 1;//0关1开
+	required bool issucc = 2 [default=false] ; // true 表示成功 false 表示失败
+	optional string msg = 3;//返回信息
+}

@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//src/main/java/org/ihansen/mybatis/generator/extend/CustomPlugin.java=GBK
+encoding//src/main/java/org/ihansen/mybatis/generator/extend/CustomSerializablePlugin.java=UTF-8
+encoding//src/main/java/org/ihansen/mybatis/generator/extend/PageHelper.java=UTF-8
+encoding//src/main/java/org/ihansen/mybatis/generator/extend/dbSupport/MysqlSupport.java=UTF-8
+encoding//src/main/java/org/ihansen/mybatis/generator/extend/dbSupport/OracleSupport.java=UTF-8
+encoding//src/main/java/org/ihansen/mybatis/generator/extend/dbSupport/SqlServerSupport.java=UTF-8
+encoding//src/main/java/org/mybatis/generator/api/dom/java/Interface.java=UTF-8
+encoding//src/main/java/org/mybatis/generator/codegen/ibatis2/IntrospectedTableIbatis2Java2Impl.java=UTF-8
+encoding//src/main/resources/dbcpconfig.properties=UTF-8
