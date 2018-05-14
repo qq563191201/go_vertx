@@ -1,0 +1,57 @@
+package com.gojava.vertx.bean.logics;
+import java.util.Map;
+
+import com.gojava.msg.protobuf.FirstCharge;
+import com.gojava.msg.protobuf.FirstChargeReslut;
+import com.gojava.utils.GameRedisSyrnc;
+import com.gojava.utils.MsgCodeUtil;
+import com.gojava.utils.RedisKeyUtil;
+import com.gojava.vertx.bean.interfaces.LogicsInterfaces;
+import io.vertx.ext.web.RoutingContext;
+
+/**
+ * @Title: 首充双倍接口
+ * @Description: 
+ * @param v
+ * @param ctx
+ * @return
+ * @author Horst
+ * @date 2017年12月27日 下午7:13:23
+ * @version V1.0
+ */
+public class Bean_Logic_FirstCharge_FirstCharge extends BaseLogics implements LogicsInterfaces<FirstCharge,FirstChargeReslut>{
+
+	@Override
+	public FirstChargeReslut DoBean(FirstCharge v, RoutingContext ctx) {
+		int userId = v.getUserId();
+		FirstChargeReslut reslut = new FirstChargeReslut();
+		if(userId == 0) {
+			reslut.setMsg(MsgCodeUtil.PARAM_ERROR);
+			return reslut;
+		}
+		//判断用户是否首充
+		boolean isFirst = GameRedisSyrnc.get_instance_center().isHashSet(RedisKeyUtil.ACT_FIRST_CHARGE_USER, userId+"");
+		if(isFirst) {
+			return reslut;
+		}
+		Map<String, String> map = GameRedisSyrnc.get_instance_center().getHashMapAll(RedisKeyUtil.ACT_FIRST_CHARGE);
+		//0关1开
+		int state = Integer.valueOf(map.getOrDefault("state", "0"));
+		if(state == 0) {
+			reslut.setMsg(MsgCodeUtil.ACTIVITY_NOTOPEN_ERROR);
+			return reslut;
+		}
+		long start = Long.valueOf(map.getOrDefault("start", "0"));
+		long end = Long.valueOf(map.getOrDefault("end", "0"));
+		long time = System.currentTimeMillis();
+		//判断是否在开启时间内
+		if(time < start || time > end) {
+			reslut.setMsg(MsgCodeUtil.ACTIVITY_NOTOPEN_ERROR);
+			return reslut;
+		}
+		reslut.setState(1);
+		reslut.setIssucc(true);
+		return reslut;
+	}
+	
+}

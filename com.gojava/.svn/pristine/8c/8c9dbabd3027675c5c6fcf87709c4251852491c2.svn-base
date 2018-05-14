@@ -1,0 +1,23 @@
+package com.gojava.vertx.bean.logics;
+
+import com.gojava.com.gojava.App;
+import com.gojava.db.dao.UserMapper;
+import com.gojava.db.model.User;
+import com.gojava.msg.protobuf.ActEggSeller;
+import com.gojava.msg.protobuf.ActEggSellerReslut;
+import com.gojava.utils.GameRedisSyrnc;
+import com.gojava.vertx.bean.interfaces.LogicsInterfaces;
+
+import io.vertx.ext.web.RoutingContext;
+public class Bean_Logic_ActEggSeller_ActEggSeller extends BaseLogics implements LogicsInterfaces<ActEggSeller,ActEggSellerReslut>{
+	
+@Override
+public ActEggSellerReslut DoBean(ActEggSeller v, RoutingContext ctx) {
+	UserMapper mapper=(UserMapper)App.context.getBean("usermapper");
+	User user = mapper.selectByPrimaryKey(100000);
+	ActEggSellerReslut reslut = new ActEggSellerReslut();
+	reslut.setVal(user.getId());
+	GameRedisSyrnc.get_instance().setHashMap("center", "math", "2", "3");
+	return reslut;
+}
+}

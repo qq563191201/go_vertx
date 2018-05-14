@@ -1,0 +1,4 @@
+2018-01-27 17:45:02.272 [vert.x-worker-thread-1] INFO  com.gtshgame.App - {'userId':1,'objbitTmp':0}
+2018-01-27 17:45:37.507 [vert.x-worker-thread-2] INFO  com.gtshgame.App - {'objbitTmp':0}
+2018-01-27 17:45:38.586 [vert.x-worker-thread-3] INFO  com.gtshgame.App - {'objbitTmp':0}
+2018-01-27 17:45:55.024 [vert.x-worker-thread-4] INFO  com.gtshgame.App - {'objbitTmp':0}

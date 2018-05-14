@@ -1,0 +1,18 @@
+2018-01-10 13:57:16.050 [vert.x-eventloop-thread-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
+2018-01-10 13:57:16.052 [vert.x-eventloop-thread-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-01-10 13:57:16.066 [vert.x-eventloop-thread-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-01-10 13:57:16.145 [vert.x-eventloop-thread-2] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.io.netty.handler.codec.http.HttpRequestMatcher
+2018-01-10 13:57:16.146 [vert.x-eventloop-thread-2] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.io.netty.handler.codec.http.HttpObjectMatcher
+2018-01-10 13:57:23.115 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gojava.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge'
+2018-01-10 13:57:23.115 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'FirstCharge_bean_FirstCharge'
+2018-01-10 13:57:23.126 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-01-10 13:57:23.131 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71a9218a] was not registered for synchronization because synchronization is not active
+2018-01-10 13:57:23.144 [vert.x-worker-thread-0] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2018-01-10 13:57:23.758 [vert.x-worker-thread-0] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.10.29:3306/majiang_houtai?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false, UserName=root@x-PC, MySQL Connector Java] will not be managed by Spring
+2018-01-10 13:57:23.762 [vert.x-worker-thread-0] DEBUG c.g.d.d.O.selectByPrimaryKey - ==>  Preparing: select user_id, order_no, money, create_datetime from order_first_charge_log where user_id = ? 
+2018-01-10 13:57:23.782 [vert.x-worker-thread-0] DEBUG c.g.d.d.O.selectByPrimaryKey - ==> Parameters: 11(Integer)
+2018-01-10 13:57:23.813 [vert.x-worker-thread-0] DEBUG c.g.d.d.O.selectByPrimaryKey - <==      Total: 0
+2018-01-10 13:57:23.815 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@71a9218a]
+2018-01-10 13:57:23.815 [vert.x-worker-thread-0] DEBUG o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+2018-01-10 13:57:26.735 [vert.x-worker-thread-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gojava.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-10 13:57:26.735 [vert.x-worker-thread-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'VipChargeInfo_bean_VipChargeInfo'

@@ -1,0 +1,114 @@
+package com.gojava.vertx.bean.logics;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Map.Entry;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.alibaba.fastjson.JSON;
+import com.gojava.db.dao.VipConfigMapper;
+import com.gojava.db.dao.VipMoneyMapper;
+import com.gojava.db.model.VipConfig;
+import com.gojava.db.model.VipConfigExample;
+import com.gojava.db.model.VipMoney;
+import com.gojava.db.model.VipMoneyExample;
+import com.gojava.msg.protobuf.VipChargeInfo;
+import com.gojava.msg.protobuf.VipChargeInfoReslut;
+import com.gojava.msg.protobuf.VipInfo;
+import com.gojava.msg.protobuf.VipMoneyInfo;
+import com.gojava.utils.GameRedisSyrnc;
+import com.gojava.utils.RedisKeyUtil;
+import com.gojava.vertx.bean.interfaces.LogicsInterfaces;
+import io.vertx.ext.web.RoutingContext;
+
+/**
+ * title: vip 充值信息
+ * des: 
+ * @author Horst
+ * @date 2017年12月28日 下午7:07:43
+ * @version V1.0
+ */
+public class Bean_Logic_VipChargeInfo_VipChargeInfo extends BaseLogics implements LogicsInterfaces<VipChargeInfo,VipChargeInfoReslut>{
+	
+	@Autowired
+	private VipConfigMapper vipConfigMapper;
+	
+	@Autowired
+	private VipMoneyMapper vipMoneyMapper;
+	
+	@Override
+	public VipChargeInfoReslut DoBean(VipChargeInfo v, RoutingContext ctx) {
+		VipChargeInfoReslut reslut = new VipChargeInfoReslut();
+		Map<String, String> map = GameRedisSyrnc.get_instance_center().getHashMapAll(RedisKeyUtil.VIP_CONFIG_INFO);
+		Map<String, String> moneyMap = GameRedisSyrnc.get_instance_center().getHashMapAll(RedisKeyUtil.VIP_CONFIG_MONEY);
+		List<VipInfo> vipInfoList = new ArrayList<>();
+		if(map.isEmpty() || moneyMap.isEmpty()) {
+			addVipRedis(vipInfoList);
+		}else {
+			for(Entry<String, String> er:map.entrySet()) {
+				VipInfo vipInfo = new VipInfo();
+				vipInfo.setVip(er.getKey());
+				vipInfo.setName(er.getValue());
+				String moneyStr = moneyMap.get(er.getKey());
+				if(moneyStr == null || moneyStr.equals("")) {
+					continue;
+				}
+				List<VipMoney> vipMoneyList = JSON.parseArray(moneyStr, VipMoney.class);
+				List<VipMoneyInfo> vipMoneyInfoList = new ArrayList<>();
+				for(VipMoney mon: vipMoneyList) {
+					VipMoneyInfo moneyInfo = new VipMoneyInfo();
+					moneyInfo.setDay(mon.getDay().toString());
+					moneyInfo.setMoney(mon.getMoney().toString());
+					moneyInfo.setId(mon.getId());
+					vipMoneyInfoList.add(moneyInfo);
+				}
+				vipInfo.setVipMoneyInfo(vipMoneyInfoList);
+				vipInfoList.add(vipInfo);
+			}
+		}
+		reslut.setVipInfo(vipInfoList);
+		return reslut;
+	}
+	
+	/**
+	 * @Title: vip充值信息为空加载redis
+	 * @Description:
+	 * @param vipInfoList
+	 * @author Horst
+	 * @date 2017年12月28日 下午8:25:16
+	 * @version V1.0
+	 */
+	private void addVipRedis(List<VipInfo> vipInfoList) {
+		List<VipConfig> vipList = vipConfigMapper.selectByExample(new VipConfigExample());
+		VipMoneyExample vipMoneyExample = new VipMoneyExample();
+		vipMoneyExample.setOrderByClause("day");
+		List<VipMoney> moneyList = vipMoneyMapper.selectByExample(vipMoneyExample);
+		for(VipConfig vc:vipList) {
+			Integer vip = vc.getId();
+			List<VipMoney> vipMoneyList = new ArrayList<>();
+			VipInfo vipInfo = new VipInfo();
+			vipInfo.setVip(vip.toString());
+			vipInfo.setName(vc.getName());
+			List<VipMoneyInfo> vipMoneyInfoList = new ArrayList<>();
+			GameRedisSyrnc.get_instance_center().setHashMap(RedisKeyUtil.VIP_CONFIG_INFO, vip.toString(), vc.getName());
+			for(VipMoney mon:moneyList) {
+				if(mon.getLevel() == vip) {
+					VipMoney money = new VipMoney();
+					money.setDay(mon.getDay());
+					money.setMoney(mon.getMoney());
+					money.setId(mon.getId());
+					vipMoneyList.add(money);
+					VipMoneyInfo moneyInfo = new VipMoneyInfo();
+					moneyInfo.setDay(mon.getDay().toString());
+					moneyInfo.setMoney(mon.getMoney().toString());
+					moneyInfo.setId(vip);
+					vipMoneyInfoList.add(moneyInfo);
+				}
+			}
+			GameRedisSyrnc.get_instance_center().setHashMap(RedisKeyUtil.VIP_CONFIG_MONEY, vip.toString(), JSON.toJSONString(vipMoneyList));
+			vipInfo.setVipMoneyInfo(vipMoneyInfoList);
+			vipInfoList.add(vipInfo);
+		}
+	}
+}

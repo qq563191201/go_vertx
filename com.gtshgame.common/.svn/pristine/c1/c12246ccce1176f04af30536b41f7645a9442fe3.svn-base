@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration>
+<typeAliases>
+<typeAlias alias="VIPCONFIGEntity" type="com.gojava.db.model.VipConfig"/>
+
+<typeAlias alias="VIPMONEYEntity" type="com.gojava.db.model.VipMoney"/>
+
+
+</typeAliases>
+<mappers>
+<mapper resource="com/gojava/db/maping/VipConfigMapper.xml" />
+<mapper resource="com/gojava/db/maping/VipMoneyMapper.xml" />
+
+</mappers>
+</configuration>

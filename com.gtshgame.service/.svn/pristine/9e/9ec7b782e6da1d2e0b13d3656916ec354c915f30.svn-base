@@ -1,0 +1,21 @@
+package com.gojava.msg.protobuf;
+
+public  class ActEggSellerReslut {
+private long val;
+private boolean hasVal;
+public boolean hasVal() {
+return hasVal;
+}
+public long getVal() {
+return val;
+}
+public void setVal(long Val) {
+this.val = Val;
+this.hasVal = true;
+}
+public java.util.Map toMap() {
+java.util.Map map=new java.util.HashMap();
+map.put("val",val);
+return map;
+}
+}

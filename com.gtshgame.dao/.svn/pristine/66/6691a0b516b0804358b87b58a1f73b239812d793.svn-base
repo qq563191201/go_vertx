@@ -1,0 +1,5 @@
+spring.datasource.type=org.apache.commons.dbcp.BasicDataSource
+spring.datasource.url=jdbc:mysql://192.168.10.128:3306/majiang_houtai
+spring.datasource.username=root
+spring.datasource.password=mj!123
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver

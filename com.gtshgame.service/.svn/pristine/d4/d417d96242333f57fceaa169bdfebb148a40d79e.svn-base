@@ -1,0 +1,51 @@
+package com.gojava.vertx.handler; 
+import org.apache.log4j.Logger;
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+import com.gojava.com.gojava.App;
+ import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Handler;
+import io.vertx.core.http.HttpServer;
+import io.vertx.core.http.HttpServerOptions;
+import io.vertx.ext.web.Router;
+import io.vertx.ext.web.RoutingContext;
+import io.vertx.ext.web.Session;
+import io.vertx.ext.web.handler.BodyHandler;
+import io.vertx.ext.web.handler.CookieHandler;
+import io.vertx.ext.web.handler.SessionHandler;
+import io.vertx.ext.web.sstore.ClusteredSessionStore;
+import io.vertx.ext.web.sstore.LocalSessionStore;
+import io.vertx.ext.web.sstore.SessionStore;
+import com.alibaba.fastjson.JSON;
+import com.gojava.com.gojava.App;
+import com.gojava.interfaces.MsgInterfaceVertx;
+import com.gojava.utils.GoUtils;
+import com.gojava.vertx.beans.Bean_Vertx_ActEggSeller_ActEggSeller;
+import com.gojava.msg.protobuf.ActEggSeller;
+import com.gojava.msg.protobuf.ActEggSellerReslut;
+
+public class vertx_ActEggSeller_ActEggSeller_Json_Handler implements Handler<RoutingContext>,ApplicationContextAware{ 
+ApplicationContext appctx;
+Logger loger=Logger.getLogger(App.class);
+@Override
+public void handle(RoutingContext ctx) {
+String json=GoUtils.ToJsonStr(ctx.getBodyAsString());
+ActEggSeller message=JSON.parseObject(json,ActEggSeller.class);
+MsgInterfaceVertx<ActEggSeller,ActEggSellerReslut> bean=(MsgInterfaceVertx<ActEggSeller,ActEggSellerReslut>)appctx.getBean(Bean_Vertx_ActEggSeller_ActEggSeller.class);
+String endstr;
+try {
+endstr = JSON.toJSONString(bean.ProcessMsgInfo(message,ctx));
+ctx.response().end(endstr);
+} catch (Exception e) {
+e.printStackTrace();
+ctx.response().end("{err:500}");}
+}
+@Override
+public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+appctx=applicationContext;
+ }
+ }

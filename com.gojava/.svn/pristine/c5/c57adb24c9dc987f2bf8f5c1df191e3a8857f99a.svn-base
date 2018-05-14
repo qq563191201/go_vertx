@@ -1,0 +1,14 @@
+<div id="testGo">
+       
+</div>
+<script type="text/javascript">
+    var url=window.location.href;
+     console.log(url);
+    var Param=url.indexOf("?");
+    var SubStr = url.substring(Param,url.length-Param);
+    console.log(SubStr);
+//    var Data=JSON.parse(SubStr);
+  //  var MB = CreateForm(Data);
+   // ReactDOM.render(MB,document.getElementById("testGo"))
+    
+</script>

@@ -1,0 +1,34 @@
+package com.gojava.msg.protobuf;
+
+public  class ActEggSeller {
+private long score;
+private boolean hasScore;
+public boolean hasScore() {
+return hasScore;
+}
+public long getScore() {
+return score;
+}
+public void setScore(long Score) {
+this.score = Score;
+this.hasScore = true;
+}
+private int serverId;
+private boolean hasServerId;
+public boolean hasServerId() {
+return hasServerId;
+}
+public int getServerId() {
+return serverId;
+}
+public void setServerId(int ServerId) {
+this.serverId = ServerId;
+this.hasServerId = true;
+}
+public java.util.Map toMap() {
+java.util.Map map=new java.util.HashMap();
+map.put("score",score);
+map.put("serverId",serverId);
+return map;
+}
+}

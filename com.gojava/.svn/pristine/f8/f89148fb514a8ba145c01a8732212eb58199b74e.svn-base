@@ -1,0 +1,66 @@
+package com.gojava.vertx.handler;
+import org.apache.log4j.Logger;
+import java.io.IOException;
+import org.springframework.beans.BeansException;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+import com.gojava.com.gojava.App;
+ import io.vertx.core.AbstractVerticle;
+import io.vertx.core.Handler;
+import io.vertx.core.http.HttpServer;
+import io.vertx.core.http.HttpServerOptions;
+import io.vertx.ext.web.Router;
+import io.vertx.ext.web.RoutingContext;
+import io.vertx.ext.web.Session;
+import io.vertx.ext.web.handler.BodyHandler;
+import com.alibaba.fastjson.JSON;
+import com.gojava.com.gojava.App;
+import com.gojava.interfaces.MsgInterfaceVertx;
+import com.gojava.utils.GoUtils;
+import com.gojava.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge;
+import com.gojava.msg.protobuf.FirstCharge;
+import com.gojava.msg.protobuf.FirstChargeReslut;
+import io.vertx.ext.web.handler.CookieHandler;
+import io.vertx.ext.web.handler.SessionHandler;
+import io.vertx.core.buffer.Buffer;
+import java.util.HashMap;
+import java.util.Map;
+import io.vertx.ext.web.sstore.ClusteredSessionStore;
+import io.vertx.ext.web.sstore.LocalSessionStore;
+import io.vertx.ext.web.sstore.SessionStore;
+public class vertx_FirstCharge_FirstCharge_MsgPack_Handler implements Handler<RoutingContext>,ApplicationContextAware{ 
+ApplicationContext appctx;
+org.msgpack.MessagePack msgpack=new org.msgpack.MessagePack();
+Logger loger=Logger.getLogger(App.class);
+@Override
+public void handle(RoutingContext ctx) {
+String json=GoUtils.ToJsonStr(ctx.getBodyAsString());
+FirstCharge message=JSON.parseObject(json,FirstCharge.class);
+MsgInterfaceVertx<FirstCharge,FirstChargeReslut> bean=(MsgInterfaceVertx<FirstCharge,FirstChargeReslut>)appctx.getBean(Bean_Vertx_FirstCharge_FirstCharge.class);
+Map beanMap=null;
+try {
+beanMap = bean.ProcessMsgInfo(message,ctx).toMap();
+} catch (Exception e) {
+loger.error("e", e);
+}
+Map returnsMap=new HashMap();
+returnsMap.put("data",beanMap);
+Buffer mb=	Buffer.buffer();
+byte[] outbytes=null;
+try {
+outbytes = msgpack.write(returnsMap);
+mb.appendBytes(outbytes);
+ ctx.response().end(mb);
+} catch (IOException e) {
+returnsMap.put("err",500);
+e.printStackTrace();
+}
+}
+@Override
+public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+appctx=applicationContext;
+ }
+ }

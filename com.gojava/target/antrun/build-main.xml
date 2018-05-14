@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="E:/mjmatch/" overwrite="true">
+    <fileset file="src/main/java/interfaces.xml"/>
+    <fileset file="src/main/java/sqlserver-jdbc-connection-online.properties"/>
+    <fileset file="src/main/java/sqlserver-jdbc-connection.properties"/>
+  </copy>
+</target>
+</project>

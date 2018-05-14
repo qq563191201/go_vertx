@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration>
+<typeAliases>
+<typeAlias alias="COMPETITIONAREAEntity" type="com.gojava.db.model.CompetitionArea"/>
+
+<typeAlias alias="USEREntity" type="com.gojava.db.model.User"/>
+
+
+</typeAliases>
+<mappers>
+<mapper resource="com/gojava/db/maping/CompetitionAreaMapper.xml" />
+<mapper resource="com/gojava/db/maping/UserMapper.xml" />
+
+</mappers>
+</configuration>

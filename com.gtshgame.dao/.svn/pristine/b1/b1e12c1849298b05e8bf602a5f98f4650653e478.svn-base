@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RECORD>
+    <!-- Id 是协议的ID，Name 则是注册在IOC Spring中对应的bean名字 -->
+    <Method>
+        <Id>1000</Id>
+        <Name>MsgInterface</Name>
+    </Method>
+</RECORD>

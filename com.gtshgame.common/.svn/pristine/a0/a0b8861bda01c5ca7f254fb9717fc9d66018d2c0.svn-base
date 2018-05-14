@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<generatorConfiguration>
+<classPathEntry location="C:\Users\x\.m2\repository\com\oracle\ojdbc6\11.2.0.3\ojdbc6-11.2.0.3.jar" />
+<classPathEntry location="C:\Users\x\.m2\repository\mysql\mysql-connector-java\5.1.34\mysql-connector-java-5.1.34.jar" />
+  <iocmapper>E:\workmj\com.gojava\src\main\java\mybaitsMapper.xml</iocmapper>
+  <mymapper>E:\workmj\com.gojava\src\main\java\mybatis-config.xml</mymapper>
+  
+  <context id="context" targetRuntime="MyBatis3" >
+    <!-- 自定义序列化 -->
+		<plugin type="org.ihansen.mybatis.generator.extend.CustomSerializablePlugin"></plugin>
+		<!-- oracle/mysql/sqlserver方言插件 -->
+		<plugin type="org.ihansen.mybatis.generator.extend.CustomPlugin">
+			<!-- <property name="pageHelperClass" value="org.ihansen.mybatis.generator.extend.PageHelper" /> -->
+			<property name="dbType" value="MYSQL" />
+		</plugin>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.10.29:3306/majiang_houtai" userId="root" password="mj!123" />
+    <javaModelGenerator targetPackage="com.gojava.db.model" targetProject="F:\WorkSpace\newpotato\src\model" >
+    <property name="enableSubPackages" value="true" />
+		
+    </javaModelGenerator>
+    <sqlMapGenerator targetPackage="com.gojava.db.maping" targetProject="F:\WorkSpace\newpotato\src\mapper" >
+    	<property name="enableSubPackages" value="true" />
+			<!-- 此属性表示是否和原xml合并,false表示覆盖 -->
+			 
+    </sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.gojava.db.dao" targetProject="F:\WorkSpace\newpotato\src\dao" type="XMLMAPPER" >
+    <property name="enableSubPackages" value="true" />
+   
+    </javaClientGenerator>
+   	 <SessionFactory value="sqlSessionFactory"></SessionFactory>
+   	 
+   	 <table tableName="activity"
+     domainObjectName="Activity"
+     enableCountByExample="true" 
+     enableUpdateByExample="true"
+     enableDeleteByExample="true" 
+     enableSelectByExample="true" 
+     selectByExampleQueryId="true">
+	 </table>
+  
+	 <table tableName="order_first_charge_log"
+     domainObjectName="OrderFirstChargeLog"
+     enableCountByExample="true" 
+     enableUpdateByExample="true"
+     enableDeleteByExample="true" 
+     enableSelectByExample="true" 
+     selectByExampleQueryId="true">
+	 </table>
+
+	 
+  </context>
+  
+  <context id="context_act" targetRuntime="MyBatis3" >
+    <!-- 自定义序列化 -->
+		<plugin type="org.ihansen.mybatis.generator.extend.CustomSerializablePlugin"></plugin>
+		<!-- oracle/mysql/sqlserver方言插件 -->
+		<plugin type="org.ihansen.mybatis.generator.extend.CustomPlugin">
+			<!-- <property name="pageHelperClass" value="org.ihansen.mybatis.generator.extend.PageHelper" /> -->
+			<property name="dbType" value="MYSQL" />
+		</plugin>
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://192.168.10.29:3306/mj_activity" userId="root" password="mj!123" />
+    <javaModelGenerator targetPackage="com.gojava.db.model" targetProject="F:\WorkSpace\newpotato\src\model" >
+    <property name="enableSubPackages" value="true" />
+		
+    </javaModelGenerator>
+    <sqlMapGenerator targetPackage="com.gojava.db.maping" targetProject="F:\WorkSpace\newpotato\src\mapper" >
+    	<property name="enableSubPackages" value="true" />
+			<!-- 此属性表示是否和原xml合并,false表示覆盖 -->
+			 
+    </sqlMapGenerator>
+    <javaClientGenerator targetPackage="com.gojava.db.dao" targetProject="F:\WorkSpace\newpotato\src\dao" type="XMLMAPPER" >
+    <property name="enableSubPackages" value="true" />
+   
+    </javaClientGenerator>
+   	 <SessionFactory value="sqlSessionFactory2"></SessionFactory>
+  
+	 <table tableName="vip_config"
+     domainObjectName="VipConfig"
+     enableCountByExample="true" 
+     enableUpdateByExample="true"
+     enableDeleteByExample="true" 
+     enableSelectByExample="true" 
+     selectByExampleQueryId="true">
+	 </table>
+	 <table tableName="vip_money"
+     domainObjectName="VipMoney"
+     enableCountByExample="true" 
+     enableUpdateByExample="true"
+     enableDeleteByExample="true" 
+     enableSelectByExample="true" 
+     selectByExampleQueryId="true">
+	 </table>
+
+	 
+  </context>
+</generatorConfiguration>

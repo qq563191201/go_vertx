@@ -1,0 +1,48 @@
+package com.gtshgame.common.msg.protobuf;
+
+public  class VipChargeInfoReslut {
+private java.util.List<com.gtshgame.common.msg.protobuf.VipInfo> vipInfo;
+private boolean hasVipInfo;
+public boolean hasVipInfo() {
+return hasVipInfo;
+}
+public java.util.List<com.gtshgame.common.msg.protobuf.VipInfo> getVipInfo() {
+return vipInfo;
+}
+public void setVipInfo(java.util.List<com.gtshgame.common.msg.protobuf.VipInfo> VipInfo) {
+this.vipInfo = VipInfo;
+this.hasVipInfo = true;
+}
+private boolean issucc;
+private boolean hasIssucc;
+public boolean hasIssucc() {
+return hasIssucc;
+}
+public boolean getIssucc() {
+return issucc;
+}
+public void setIssucc(boolean Issucc) {
+this.issucc = Issucc;
+this.hasIssucc = true;
+}
+public java.util.Map toMap() {
+java.util.Map map=new java.util.HashMap();
+if(vipInfo!=null){
+java.util.List<java.util.Map> m_vipInfo=new java.util.ArrayList<java.util.Map>();
+if (vipInfo instanceof java.util.Collection) {
+java.util.Iterator<com.gtshgame.common.msg.protobuf.VipInfo> it;
+it=vipInfo.iterator();
+while(it.hasNext()){
+m_vipInfo.add(it.next().toMap());
+}
+} else {
+for (final com.gtshgame.common.msg.protobuf.VipInfo value : vipInfo) {
+m_vipInfo.add(value.toMap());
+}
+}
+map.put("vipInfo",m_vipInfo);
+}
+map.put("issucc",issucc);
+return map;
+}
+}

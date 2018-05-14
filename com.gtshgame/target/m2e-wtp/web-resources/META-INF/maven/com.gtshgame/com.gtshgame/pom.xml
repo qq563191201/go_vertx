@@ -1,0 +1,441 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gtshgame</groupId>
+  <artifactId>com.gtshgame</artifactId>
+  <packaging>war</packaging>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>com.gtshgame Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+<parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>1.3.5.RELEASE</version>
+</parent>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.3.0.RELEASE</spring.version>
+		<jackson.version>2.5.0</jackson.version>
+		<msgpack.version>0.6.12</msgpack.version>
+		<atomikos.version>4.0.3</atomikos.version>
+	</properties>
+
+  <dependencies>
+  	<dependency>
+       <groupId>com.gtshgame.common</groupId>
+       <artifactId>GtshgameCommon</artifactId>
+       <version>0.0.0.1</version>
+   </dependency>
+   <dependency>
+       <groupId>com.gtshgame.service</groupId>
+       <artifactId>GtshgameService</artifactId>
+       <version>0.0.0.1</version>
+   </dependency>
+   <dependency>
+       <groupId>com.gtshgame.dao</groupId>
+       <artifactId>GtshgameDao</artifactId>
+       <version>0.0.0.1</version>
+   </dependency>
+   <dependency>
+	 <groupId>org.springframework.data</groupId>
+	 <artifactId>spring-data-commons</artifactId>
+	</dependency>
+	<dependency>
+ 	<groupId>org.springframework.boot</groupId>
+ 	<artifactId>spring-boot-starter-security</artifactId>
+	</dependency>
+        <dependency>
+            <groupId>com.atomikos</groupId>
+            <artifactId>transactions-jdbc</artifactId>
+            <version>${atomikos.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+            <version>1.1</version>
+        </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.ratpack/ratpack-core -->
+	<dependency>
+    <groupId>io.ratpack</groupId>
+    <artifactId>ratpack-core</artifactId>
+    <version>1.4.0-rc-2</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/commons-dbcp/commons-dbcp -->
+	<dependency>
+    <groupId>commons-dbcp</groupId>
+    <artifactId>commons-dbcp</artifactId>
+    <version>1.4</version>
+	</dependency>
+	<dependency>
+    <groupId>tk.mybatis</groupId>
+    <artifactId>mapper</artifactId>
+    <version>3.3.9</version>
+	</dependency>
+	<dependency>
+  	<groupId>io.vertx</groupId>
+  	<artifactId>vertx-redis-client</artifactId>
+  	<version>3.3.2</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.iq80.leveldb/leveldb -->
+	<dependency>
+    <groupId>org.iq80.leveldb</groupId>
+    <artifactId>leveldb</artifactId>
+    <version>0.9</version>
+	</dependency>
+
+	<!-- https://mvnrepository.com/artifact/io.nats/jnats -->
+	<dependency>
+    <groupId>io.nats</groupId>
+    <artifactId>jnats</artifactId>
+    <version>0.7.3</version>
+	</dependency>
+
+    		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			   <artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-autoconfigure</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
+		</dependency>
+    <dependency>
+	<groupId>com.dorkbox</groupId>
+	<artifactId>ObjectPool</artifactId>
+	<version>2.6</version>
+	</dependency>
+    <dependency>
+   	 <groupId>org.mybatis</groupId>
+   	 <artifactId>mybatis</artifactId>
+    <version>3.4.1</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/net.glxn/qrgen -->
+	<dependency>
+    <groupId>net.glxn</groupId>
+    <artifactId>qrgen</artifactId>
+    <version>1.4</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+	<dependency>
+    <groupId>org.slf4j</groupId>
+    <artifactId>slf4j-api</artifactId>
+    <version>1.7.21</version>
+	</dependency>
+	
+     <dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+	<dependency>
+    <groupId>redis.clients</groupId>
+    <artifactId>jedis</artifactId>
+    <version>2.9.0</version>
+	</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+	<!-- https://mvnrepository.com/artifact/org.springframework/spring-dao -->
+	<dependency>
+	    <groupId>org.springframework</groupId>
+	    <artifactId>spring-dao</artifactId>
+	    <version>2.0.8</version>
+	</dependency>
+	<dependency>
+	  <groupId>io.vertx</groupId>
+	  <artifactId>vertx-core</artifactId>
+	  <version>3.3.2</version>
+	</dependency>
+	<dependency>
+	  <groupId>io.vertx</groupId>
+	  <artifactId>vertx-web</artifactId>
+	  <version>3.3.2</version>
+	</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${spring.version}</version>
+			<scope>test</scope>
+		</dependency>
+    
+    
+      <dependency>
+        <groupId>org.springframework.shell</groupId>
+        <artifactId>spring-shell</artifactId>
+        <version>1.2.0.M1</version>
+    </dependency>
+   <dependency>
+    <groupId>org.msgpack</groupId>
+    <artifactId>msgpack</artifactId>
+    <version>${msgpack.version}</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.msgpack/jackson-dataformat-msgpack -->
+	<dependency>
+    <groupId>org.msgpack</groupId>
+    <artifactId>jackson-dataformat-msgpack</artifactId>
+    <version>0.8.8</version>
+	</dependency>
+  
+      <dependency>
+        <groupId>org.springframework.session</groupId>
+        <artifactId>spring-session</artifactId>
+        <version>1.2.0.RELEASE</version>
+    </dependency>
+
+		<!--mybatis spring 插件 -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>1.3.0</version>
+		</dependency>
+		<!-- mysql连接 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.34</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/commons-collections/commons-collections -->
+	<dependency>
+    <groupId>commons-collections</groupId>
+    <artifactId>commons-collections</artifactId>
+    <version>3.2.1</version>
+	</dependency>
+		
+		<!-- 数据源 -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>1.0.12</version>
+		</dependency>
+  		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>1.8.4</version>
+		</dependency>
+		
+		
+		<!-- servlet -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>3.0-alpha-1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
+		<!-- json -->
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.13</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+	    <dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>2.3.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
+		</dependency>
+		<!-- 文件上传 -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.2.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.mybatis.generator</groupId>
+		    <artifactId>mybatis-generator-core</artifactId>
+		    <version>1.3.2</version>
+		</dependency>
+</dependencies>
+  <repositories>
+      <repository>
+        <id>spring-milestones</id>
+        <name>Spring Milestones</name>
+        <url>https://repo.spring.io/libs-milestone</url>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </repository>
+ 
+</repositories>
+
+<build>
+	<plugins>
+		<plugin>
+			<groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
+        </plugin>
+	    <plugin>
+		    <groupId>org.apache.maven.plugins</groupId>
+		    <artifactId>maven-compiler-plugin</artifactId>
+		    <version>3.2</version>
+		    <configuration>
+		      <source>1.8</source>
+		      <target>1.8</target>
+		    </configuration>
+	  	</plugin>
+	  	
+	  	<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <outputDirectory>E:/mjmatch/</outputDirectory>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>. lib</classpathPrefix>
+                            <mainClass>com.gojava.com.gojava.App</mainClass>
+                        </manifest>
+                    </archive>
+                    <excludes>
+                        <exclude>spring-db.xml</exclude>
+                        <exclude>sqlserver*.properties</exclude>
+                    </excludes>
+                </configuration>
+
+            </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.6</version>
+                <executions>
+                    <execution>
+                        <id>package</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <target>
+                                <copy todir="E:/mjmatch/"  overwrite="true">
+                                    <fileset file="src/main/java/spring-db.xml"/>
+                                    <fileset file="src/main/java/sqlserver-jdbc-connection-online.properties"/>
+                                    <fileset file="src/main/java/sqlserver-jdbc-connection.properties"/>
+                                </copy>
+                            </target>
+                             <includes>
+		                        <include>spring-db.xml</include>
+		                        <include>sqlserver-jdbc-connection-online.properties</include>
+		                    </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+	
+	
+	    <!--  -->
+	    <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-dependency-plugin</artifactId>
+	        <executions>
+	            <execution>
+	                <id>copy-dependencies</id>
+	                <phase>prepare-package</phase>
+	                <goals>
+	                    <goal>copy-dependencies</goal>
+	                </goals>
+	                <configuration>
+	
+	
+	
+	                    <!--指定outputDirectory-->
+	                    <outputDirectory>E:/mjmatch/lib</outputDirectory>
+	
+	
+	                    <!--
+	                        <outputDirectory>${project.build.directory}/classes/lib</outputDirectory>
+	                        Alternatively use ${project.build.directory}/classes/lib as OutputDirectory to integrate all jar-files into the main jar, but then you will need to add custom classloading code to load the jars.
+	                        -->
+	
+	
+	
+	                    <overWriteReleases>false</overWriteReleases>
+	                    <overWriteSnapshots>false</overWriteSnapshots>
+	                    <overWriteIfNewer>true</overWriteIfNewer>
+	                </configuration>
+	            </execution>
+	        </executions>
+	    </plugin>
+  
+    </plugins>
+</build>
+
+</project>

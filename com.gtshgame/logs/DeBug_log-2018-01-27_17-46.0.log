@@ -1,0 +1,8 @@
+2018-01-27 17:45:02.286 [vert.x-worker-thread-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge'
+2018-01-27 17:45:02.289 [vert.x-worker-thread-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'FirstCharge_bean_FirstCharge'
+2018-01-27 17:45:37.507 [vert.x-worker-thread-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-27 17:45:37.508 [vert.x-worker-thread-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'VipChargeInfo_bean_VipChargeInfo'
+2018-01-27 17:45:38.586 [vert.x-worker-thread-3] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-27 17:45:38.586 [vert.x-worker-thread-3] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'VipChargeInfo_bean_VipChargeInfo'
+2018-01-27 17:45:55.025 [vert.x-worker-thread-4] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-27 17:45:55.026 [vert.x-worker-thread-4] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'VipChargeInfo_bean_VipChargeInfo'

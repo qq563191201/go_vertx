@@ -1,0 +1,4 @@
+[
+{"Path":"/FirstCharge/FirstCharge","Json":"b_vertx_FirstCharge_FirstCharge_Json_Handler","MsgPack":"b_vertx_FirstCharge_FirstCharge_MsgPack_Handler"},
+{"Path":"/VipChargeInfo/VipChargeInfo","Json":"b_vertx_VipChargeInfo_VipChargeInfo_Json_Handler","MsgPack":"b_vertx_VipChargeInfo_VipChargeInfo_MsgPack_Handler"}
+]

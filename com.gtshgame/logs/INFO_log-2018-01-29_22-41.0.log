@@ -1,0 +1,41 @@
+2018-01-29 22:41:50.933 [main] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4883b407: startup date [Mon Jan 29 22:41:50 CST 2018]; root of context hierarchy
+2018-01-29 22:41:51.027 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [applicationContext.xml]
+2018-01-29 22:41:51.275 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [autobean.xml]
+2018-01-29 22:41:51.291 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [bean_logic.xml]
+2018-01-29 22:41:51.462 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [sqlserver-jdbc-connection.properties]
+2018-01-29 22:41:51.598 [main] INFO  c.a.jdbc.AbstractDataSourceBean - AtomikosDataSoureBean 'houtai': init...
+2018-01-29 22:41:51.630 [main] INFO  c.a.jdbc.AtomikosDataSourceBean - AtomikosDataSoureBean 'houtai': initializing with [ xaDataSourceClassName=com.mysql.jdbc.jdbc2.optional.MysqlXADataSource, uniqueResourceName=houtai, maxPoolSize=100, minPoolSize=10, borrowConnectionTimeout=30, maxIdleTime=60, reapTimeout=0, maintenanceInterval=60, testQuery=select 1, xaProperties=[user=root,password=,url=jdbc:mysql://127.0.0.1:3306/majiang_houtai?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false], loginTimeout=0, maxLifetime=0]
+2018-01-29 22:41:52.129 [main] INFO  c.a.jdbc.AbstractDataSourceBean - AtomikosDataSoureBean 'activity': init...
+2018-01-29 22:41:52.130 [main] INFO  c.a.jdbc.AtomikosDataSourceBean - AtomikosDataSoureBean 'activity': initializing with [ xaDataSourceClassName=com.mysql.jdbc.jdbc2.optional.MysqlXADataSource, uniqueResourceName=activity, maxPoolSize=100, minPoolSize=10, borrowConnectionTimeout=30, maxIdleTime=60, reapTimeout=0, maintenanceInterval=60, testQuery=select 1, xaProperties=[user=root,password=,url=jdbc:mysql://127.0.0.1:3306/mj_activity?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false], loginTimeout=0, maxLifetime=0]
+2018-01-29 22:41:52.251 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - Loaded jar:file:/C:/Users/x/.m2/repository/com/atomikos/transactions/4.0.3/transactions-4.0.3.jar!/transactions-defaults.properties
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.allow_subtransactions = true
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.recovery_delay = 10000
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.automatic_resource_registration = true
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.oltp_max_retries = 5
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.client_demarcation = false
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.threaded_2pc = false
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.serial_jta_transactions = true
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.log_base_dir = ./
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.rmi_export_class = none
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.max_actives = 50
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.checkpoint_interval = 500
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.enable_logging = true
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.log_base_name = tmlog
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.max_timeout = 300000
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.trust_client_tm = false
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.tm_unique_name = 192.168.10.128.tm
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: java.naming.factory.initial = com.sun.jndi.rmi.registry.RegistryContextFactory
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.forget_orphaned_log_entries_delay = 86400000
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.oltp_retry_interval = 10000
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: java.naming.provider.url = rmi://localhost:1099
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.force_shutdown_on_vm_exit = false
+2018-01-29 22:41:52.256 [main] INFO  c.a.icatch.provider.imp.AssemblerImp - USING: com.atomikos.icatch.default_jta_timeout = 10000
+2018-01-29 22:41:52.333 [main] INFO  c.a.d.xa.XATransactionalResource - houtai: refreshed XAResource
+2018-01-29 22:41:52.341 [main] INFO  c.a.d.xa.XATransactionalResource - activity: refreshed XAResource
+2018-01-29 22:41:52.359 [main] INFO  o.s.t.jta.JtaTransactionManager - Using JTA UserTransaction: com.atomikos.icatch.jta.UserTransactionImp@457c9034
+2018-01-29 22:41:52.360 [main] INFO  o.s.t.jta.JtaTransactionManager - Using JTA TransactionManager: com.atomikos.icatch.jta.UserTransactionManager@345f69f3
+2018-01-29 22:41:52.996 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [sqlserver-jdbc-connection.properties]
+2018-01-29 22:41:53.354 [main] INFO  com.gtshgame.App - /api/FirstCharge/FirstCharge
+2018-01-29 22:41:53.354 [main] INFO  com.gtshgame.App - /api/json/FirstCharge/FirstCharge
+2018-01-29 22:41:53.355 [main] INFO  com.gtshgame.App - /api/VipChargeInfo/VipChargeInfo
+2018-01-29 22:41:53.355 [main] INFO  com.gtshgame.App - /api/json/VipChargeInfo/VipChargeInfo

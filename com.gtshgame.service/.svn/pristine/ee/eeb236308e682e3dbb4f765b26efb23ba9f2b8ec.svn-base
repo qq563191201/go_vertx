@@ -1,0 +1,7 @@
+package com.gojava.utils;
+
+public class RedisKeyUtil {
+	
+	public static String ACT_FIRST_CHARGE = "act:fc";//首充活动配置
+
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RECORD>
+	<!-- protobuf源码目录-->
+    <ProtoBufDir>E:\workmj\protobuf-gcless-master\src\test\resources</ProtoBufDir>
+    <!-- JAVA测试页面的代码 -->
+    <JavaGen>E:\\workmj\\com.gojava\\webroot\\webtest</JavaGen>
+    <!-- protobuf输出的文件目录 -->
+    <ProtoOutPut>F:\WorkSpace\newpotato\src\protobuf\proto</ProtoOutPut>
+    <ProtoBeanOut>F:\\testjava</ProtoBeanOut>
+    <ProtoBeanController>F:\\testjava</ProtoBeanController>
+    <ProtoBeanControllerTest>F:\\testjava</ProtoBeanControllerTest>
+    <ProtoBeanTest>F:\\testjava</ProtoBeanTest>
+    <VertxBeanHandler>E:\workmj\com.gojava\src\main\java\com\gojava\vertx\handler</VertxBeanHandler>
+    <VertxBean>E:\workmj\com.gojava\src\main\java\com\gojava\vertx\beans</VertxBean>
+    <VertxMsgPack>E:\mjmatch\handler</VertxMsgPack>
+    <ProjectDir>E:\workmj\com.gojava\src\main\java</ProjectDir>
+	<Interface>E:\workmj\com.gojava\src\main\java</Interface>   
+	<!-- 自动注册Bean的xml--> 
+	<SpringBean>E:\workmj\com.gojava\src\main\java</SpringBean>
+	<!-- 逻辑代码模板 -->
+	<BeanLogic>E:\workmj\com.gojava\src\main\java\com\gojava\vertx\bean\logics</BeanLogic>
+	<!-- 逻辑代码接口注册 -->
+	<LogicXML></LogicXML>
+	<!-- 客户端脚本支持 -->
+	<LuaScript></LuaScript>
+	<!-- 语言类型  Golang Java -->
+	<Language>Java</Language>
+	<!-- golang 工程名字 -->
+	<Package>gamehall</Package>
+	<!-- golang protobuf dir -->
+	<ProtobufGo>goprobuf</ProtobufGo>
+	<!--工程目录-->
+	<GoDir>E:\WorkSpace\newpotato\src\pokerhall</GoDir>
+	<!--https-->
+	<GoHttpLogic>hallloc</GoHttpLogic>
+	<!--Http Golang Handler 处理协议的句柄 -->
+	<GoHttpHandler>http</GoHttpHandler>
+	<!-- golang 逻辑目录包名 -->
+	<GoTcpLogic></GoTcpLogic>
+	<!--Http Golang Handler 处理协议的句柄 -->
+	<GoTcpHandler></GoTcpHandler>
+	<!--工程系统目录 -->
+	<GolangDir>pokerhall</GolangDir>
+</RECORD>

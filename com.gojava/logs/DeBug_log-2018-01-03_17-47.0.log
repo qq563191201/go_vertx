@@ -1,0 +1,22 @@
+2018-01-03 17:47:26.605 [vert.x-worker-thread-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gojava.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-03 17:47:26.608 [vert.x-worker-thread-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'VipChargeInfo_bean_VipChargeInfo'
+2018-01-03 17:47:36.779 [vert.x-worker-thread-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gojava.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-03 17:47:36.780 [vert.x-worker-thread-2] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'VipChargeInfo_bean_VipChargeInfo'
+2018-01-03 17:47:36.780 [vert.x-worker-thread-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-01-03 17:47:36.781 [vert.x-worker-thread-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@733b53ed] was not registered for synchronization because synchronization is not active
+2018-01-03 17:47:36.781 [vert.x-worker-thread-2] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2018-01-03 17:47:36.786 [vert.x-worker-thread-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.10.29:3306/mj_activity?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false, UserName=root@x-PC, MySQL Connector Java] will not be managed by Spring
+2018-01-03 17:47:36.786 [vert.x-worker-thread-2] DEBUG c.g.d.d.V.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, convert_value, name from vip_config 
+2018-01-03 17:47:36.787 [vert.x-worker-thread-2] DEBUG c.g.d.d.V.selectByExample - ==> Parameters: 
+2018-01-03 17:47:36.792 [vert.x-worker-thread-2] DEBUG c.g.d.d.V.selectByExample - <==      Total: 5
+2018-01-03 17:47:36.792 [vert.x-worker-thread-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@733b53ed]
+2018-01-03 17:47:36.792 [vert.x-worker-thread-2] DEBUG o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+2018-01-03 17:47:36.792 [vert.x-worker-thread-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-01-03 17:47:36.793 [vert.x-worker-thread-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cee568e] was not registered for synchronization because synchronization is not active
+2018-01-03 17:47:36.793 [vert.x-worker-thread-2] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2018-01-03 17:47:36.795 [vert.x-worker-thread-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [jdbc:mysql://192.168.10.29:3306/mj_activity?useUnicode=true&characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false, UserName=root@x-PC, MySQL Connector Java] will not be managed by Spring
+2018-01-03 17:47:36.795 [vert.x-worker-thread-2] DEBUG c.g.d.d.V.selectByExample - ==>  Preparing: select 'true' as QUERYID, id, level, money, day from vip_money order by day 
+2018-01-03 17:47:36.795 [vert.x-worker-thread-2] DEBUG c.g.d.d.V.selectByExample - ==> Parameters: 
+2018-01-03 17:47:36.803 [vert.x-worker-thread-2] DEBUG c.g.d.d.V.selectByExample - <==      Total: 15
+2018-01-03 17:47:36.803 [vert.x-worker-thread-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5cee568e]
+2018-01-03 17:47:36.803 [vert.x-worker-thread-2] DEBUG o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource

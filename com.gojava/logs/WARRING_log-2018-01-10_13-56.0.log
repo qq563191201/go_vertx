@@ -1,0 +1,2 @@
+2018-01-10 13:56:35.229 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.isea533.mybatis.mapper]' package. Please check your configuration.
+2018-01-10 13:56:35.238 [main] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.isea533.mybatis.mapper]' package. Please check your configuration.

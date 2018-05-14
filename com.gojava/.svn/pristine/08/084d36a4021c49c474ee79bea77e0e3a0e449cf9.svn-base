@@ -1,0 +1,38 @@
+package com.gojava.utils;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+import org.apache.log4j.Logger;
+
+import com.gojava.com.gojava.App;
+
+import redis.clients.jedis.Jedis;
+
+public class GameRedisSyrnc {
+	static GameRedisSyrnc _instance=null;
+
+	public static GameRedisSyrnc get_instance() {
+		return getinstance();
+	}
+	Logger loger=Logger.getLogger(App.class);
+	private GameRedisSyrnc(){}
+	private synchronized static  GameRedisSyrnc getinstance(){
+		if(_instance==null)
+			_instance=new GameRedisSyrnc();
+		return _instance;
+	}
+	public void addGameRedis(String Name,String Host,int port, String pwd){
+		
+		JRedisTable.get_instance().addRedis(Name, Host, port, pwd);
+	}
+	public Jedis GetJedis(String name){
+		return JRedisTable.get_instance().getJedis(name);
+	}
+	
+	public void setHashMap(String name, String key,String id, String value){
+		Jedis je = JRedisTable.get_instance().getJedis(name);	
+		je.hset(key, id, value);
+	}
+}

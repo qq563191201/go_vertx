@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+根据配置表自动生成消息逻辑处理接口BEAN
+<MsgBean>
+	<Id>1002</Id>
+	<MsgProto>ProtoBuf类的命名空间</MsgProto>
+	<MsgName>ProtoBuf的名字</MsgName>
+	<MsgFile>对应ProtoBuf的文件名字</MsgFile>
+</MsgBean>
+ -->
+<RECORD>
+    
+    
+</RECORD>

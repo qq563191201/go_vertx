@@ -1,0 +1,611 @@
+2018-01-30 09:26:10.629 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2018-01-30 09:26:10.641 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-01-30 09:26:10.641 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-01-30 09:26:10.853 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2018-01-30 09:26:10.854 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-01-30 09:26:10.854 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-01-30 09:26:10.877 [main] DEBUG o.s.b.f.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-01-30 09:26:10.962 [main] DEBUG o.s.b.f.xml.PluggableSchemaResolver - Loading schema mappings from [META-INF/spring.schemas]
+2018-01-30 09:26:10.971 [main] DEBUG o.s.b.f.xml.PluggableSchemaResolver - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-4.3.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.4.xsd=org/springframework/data/repository/config/spring-repository-1.4.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/security/spring-security-3.0.3.xsd=org/springframework/security/config/spring-security-3.0.3.xsd, http://mybatis.org/schema/mybatis-spring-1.2.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/security/spring-security-2.0.1.xsd=org/springframework/security/config/spring-security-2.0.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/security/spring-security-2.0.xsd=org/springframework/security/config/spring-security-2.0.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.3.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.8.xsd=org/springframework/data/repository/config/spring-repository-1.8.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.7.xsd=org/springframework/data/repository/config/spring-repository-1.7.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/security/spring-security-2.0.4.xsd=org/springframework/security/config/spring-security-2.0.4.xsd, http://mybatis.org/schema/mybatis-spring.xsd=org/mybatis/spring/config/mybatis-spring-1.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.3.xsd=org/springframework/context/config/spring-context-4.3.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/security/spring-security-3.2.xsd=org/springframework/security/config/spring-security-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/aop/spring-aop-4.3.xsd=org/springframework/aop/config/spring-aop-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd=org/springframework/jdbc/config/spring-jdbc-4.3.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.6.xsd=org/springframework/data/repository/config/spring-repository-1.6.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd=org/springframework/web/servlet/config/spring-mvc-4.3.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-4.3.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-4.3.xsd=org/springframework/beans/factory/xml/spring-tool-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-4.3.xsd=org/springframework/ejb/config/spring-jee-4.3.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/security/spring-security-3.1.xsd=org/springframework/security/config/spring-security-3.1.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.0.xsd=org/springframework/data/repository/config/spring-repository-1.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/cache/spring-cache-4.3.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/security/spring-security-4.0.xsd=org/springframework/security/config/spring-security-4.0.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.3.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.5.xsd=org/springframework/data/repository/config/spring-repository-1.5.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.3.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.3.xsd, http://www.springframework.org/schema/security/spring-security-2.0.2.xsd=org/springframework/security/config/spring-security-2.0.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-4.3.xsd=org/springframework/beans/factory/xml/spring-beans-4.3.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/security/spring-security.xsd=org/springframework/security/config/spring-security-4.0.xsd, http://www.alibaba.com/schema/stat.xsd=META-INF/stat.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/security/spring-security-3.0.xsd=org/springframework/security/config/spring-security-3.0.xsd, http://www.springframework.org/schema/data/repository/spring-repository-1.11.xsd=org/springframework/data/repository/config/spring-repository-1.11.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/task/spring-task-4.3.xsd=org/springframework/scheduling/config/spring-task-4.3.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.3.xsd}
+2018-01-30 09:26:10.972 [main] DEBUG o.s.b.f.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-4.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.1.xsd
+2018-01-30 09:26:11.014 [main] DEBUG o.s.b.f.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/context/spring-context-4.1.xsd] in classpath: org/springframework/context/config/spring-context-4.1.xsd
+2018-01-30 09:26:11.024 [main] DEBUG o.s.b.f.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tool/spring-tool-4.1.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.1.xsd
+2018-01-30 09:26:11.055 [main] DEBUG o.s.b.f.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/tx/spring-tx-4.1.xsd] in classpath: org/springframework/transaction/config/spring-tx-4.1.xsd
+2018-01-30 09:26:11.061 [main] DEBUG o.s.b.f.x.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+2018-01-30 09:26:11.073 [main] DEBUG o.s.b.f.x.DefaultNamespaceHandlerResolver - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.alibaba.com/schema/stat=com.alibaba.druid.support.spring.stat.config.DruidStatNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/data/repository=org.springframework.data.repository.config.RepositoryNameSpaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://mybatis.org/schema/mybatis-spring=org.mybatis.spring.config.NamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/security=org.springframework.security.config.SecurityNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/data/keyvalue=org.springframework.data.keyvalue.repository.config.KeyValueRepositoryNameSpaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2018-01-30 09:26:11.109 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2018-01-30 09:26:11.110 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-01-30 09:26:11.110 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-01-30 09:26:11.131 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved classpath location [com/gtshgame/db/dao/] to resources [URL [file:/C:/workspace/com.gtshgame.dao/target/classes/com/gtshgame/db/dao/]]
+2018-01-30 09:26:11.134 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao]
+2018-01-30 09:26:11.134 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao] for files matching pattern [C:/workspace/com.gtshgame.dao/target/classes/com/gtshgame/db/dao/**/*.class]
+2018-01-30 09:26:11.138 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\impl] for files matching pattern [C:/workspace/com.gtshgame.dao/target/classes/com/gtshgame/db/dao/**/*.class]
+2018-01-30 09:26:11.150 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/gtshgame/db/dao/**/*.class] to resources [file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\CallLogDao.class], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\DAO.class], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\impl\AbstractDao.class], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\impl\CallLogDaoImpl.class], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\impl\OrderFirstChargeLogDaoImpl.class], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\impl\VipMoneyDaoImpl.class], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\OrderFirstChargeLogDao.class], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\VipMoneyDao.class]]
+2018-01-30 09:26:11.187 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\impl\CallLogDaoImpl.class]
+2018-01-30 09:26:11.188 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\impl\OrderFirstChargeLogDaoImpl.class]
+2018-01-30 09:26:11.189 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\dao\impl\VipMoneyDaoImpl.class]
+2018-01-30 09:26:11.194 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2018-01-30 09:26:11.194 [main] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-01-30 09:26:11.195 [main] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-01-30 09:26:11.197 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved classpath location [com/gtshgame/service/impl/] to resources [URL [file:/C:/workspace/com.gtshgame.service/target/classes/com/gtshgame/service/impl/]]
+2018-01-30 09:26:11.197 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [C:\workspace\com.gtshgame.service\target\classes\com\gtshgame\service\impl]
+2018-01-30 09:26:11.197 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [C:\workspace\com.gtshgame.service\target\classes\com\gtshgame\service\impl] for files matching pattern [C:/workspace/com.gtshgame.service/target/classes/com/gtshgame/service/impl/**/*.class]
+2018-01-30 09:26:11.198 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/gtshgame/service/impl/**/*.class] to resources [file [C:\workspace\com.gtshgame.service\target\classes\com\gtshgame\service\impl\TestServiceImpl.class]]
+2018-01-30 09:26:11.210 [main] DEBUG o.s.c.a.ClassPathBeanDefinitionScanner - Identified candidate component class: file [C:\workspace\com.gtshgame.service\target\classes\com\gtshgame\service\impl\TestServiceImpl.class]
+2018-01-30 09:26:11.230 [main] DEBUG o.s.b.f.xml.XmlBeanDefinitionReader - Loaded 25 bean definitions from location pattern [applicationContext.xml]
+2018-01-30 09:26:11.232 [main] DEBUG o.s.b.f.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-01-30 09:26:11.234 [main] DEBUG o.s.b.f.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2018-01-30 09:26:11.254 [main] DEBUG o.s.b.f.x.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+2018-01-30 09:26:11.256 [main] DEBUG o.s.b.f.xml.XmlBeanDefinitionReader - Loaded 6 bean definitions from location pattern [autobean.xml]
+2018-01-30 09:26:11.258 [main] DEBUG o.s.b.f.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-01-30 09:26:11.262 [main] DEBUG o.s.b.f.xml.PluggableSchemaResolver - Found XML schema [http://www.springframework.org/schema/beans/spring-beans-3.0.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-3.0.xsd
+2018-01-30 09:26:11.288 [main] DEBUG o.s.b.f.x.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+2018-01-30 09:26:11.290 [main] DEBUG o.s.b.f.xml.XmlBeanDefinitionReader - Loaded 2 bean definitions from location pattern [bean_logic.xml]
+2018-01-30 09:26:11.290 [main] DEBUG o.s.c.s.ClassPathXmlApplicationContext - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@4883b407: org.springframework.beans.factory.support.DefaultListableBeanFactory@7a4ccb53: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,callLogDao,orderFirstChargeLogDao,vipMoneyDao,testServiceImpl,propertyConfigurer,dataSourceHoutai,dataSourceActivity,houtaiSqlSessionFactory,houtaiSqlSessionTemplate,activitySqlSessionFactory,activitySqlSessionTemplate,atomikosTransactionManager,atomikosUserTransaction,springTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,b_vertx_FirstCharge_FirstCharge_Json_Handler,b_vertx_FirstCharge_FirstCharge_MsgPack_Handler,com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge,b_vertx_VipChargeInfo_VipChargeInfo_Json_Handler,b_vertx_VipChargeInfo_VipChargeInfo_MsgPack_Handler,com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo,FirstCharge_bean_FirstCharge,VipChargeInfo_bean_VipChargeInfo]; root of factory hierarchy
+2018-01-30 09:26:11.376 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-30 09:26:11.377 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-30 09:26:11.391 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-01-30 09:26:11.393 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-30 09:26:11.474 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'propertyConfigurer'
+2018-01-30 09:26:11.474 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'propertyConfigurer'
+2018-01-30 09:26:11.476 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'propertyConfigurer' to allow for resolving potential circular references
+2018-01-30 09:26:11.503 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'propertyConfigurer'
+2018-01-30 09:26:11.510 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-01-30 09:26:11.510 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-01-30 09:26:11.511 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-01-30 09:26:11.511 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-01-30 09:26:11.511 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-01-30 09:26:11.511 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-01-30 09:26:11.512 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-01-30 09:26:11.512 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-01-30 09:26:11.512 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-01-30 09:26:11.512 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-01-30 09:26:11.516 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-01-30 09:26:11.516 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2018-01-30 09:26:11.517 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2018-01-30 09:26:11.527 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2018-01-30 09:26:11.543 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2018-01-30 09:26:11.546 [main] DEBUG o.s.c.s.ClassPathXmlApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@69453e37]
+2018-01-30 09:26:11.548 [main] DEBUG o.s.c.s.ClassPathXmlApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@2de23121]
+2018-01-30 09:26:11.549 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7a4ccb53: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,callLogDao,orderFirstChargeLogDao,vipMoneyDao,testServiceImpl,propertyConfigurer,dataSourceHoutai,dataSourceActivity,houtaiSqlSessionFactory,houtaiSqlSessionTemplate,activitySqlSessionFactory,activitySqlSessionTemplate,atomikosTransactionManager,atomikosUserTransaction,springTransactionManager,org.springframework.transaction.config.internalTransactionalEventListenerFactory,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,b_vertx_FirstCharge_FirstCharge_Json_Handler,b_vertx_FirstCharge_FirstCharge_MsgPack_Handler,com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge,b_vertx_VipChargeInfo_VipChargeInfo_Json_Handler,b_vertx_VipChargeInfo_VipChargeInfo_MsgPack_Handler,com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo,FirstCharge_bean_FirstCharge,VipChargeInfo_bean_VipChargeInfo,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; root of factory hierarchy
+2018-01-30 09:26:11.549 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-30 09:26:11.549 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-01-30 09:26:11.549 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-01-30 09:26:11.549 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-01-30 09:26:11.549 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-01-30 09:26:11.549 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-01-30 09:26:11.551 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2018-01-30 09:26:11.554 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:11.555 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:11.556 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2018-01-30 09:26:11.562 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2018-01-30 09:26:11.562 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2018-01-30 09:26:11.565 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+2018-01-30 09:26:11.568 [main] DEBUG o.s.a.f.a.BeanFactoryAdvisorRetrievalHelper - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:11.570 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2018-01-30 09:26:11.571 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:11.573 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-01-30 09:26:11.573 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-01-30 09:26:11.574 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-01-30 09:26:11.574 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2018-01-30 09:26:11.577 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:11.577 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-01-30 09:26:11.577 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'callLogDao'
+2018-01-30 09:26:11.577 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'callLogDao'
+2018-01-30 09:26:11.584 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.gtshgame.db.dao.impl.CallLogDaoImpl]: ResourceElement for private org.mybatis.spring.SqlSessionTemplate com.gtshgame.db.dao.impl.CallLogDaoImpl.houtaiSqlSessionTemplate
+2018-01-30 09:26:11.588 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'callLogDao' to allow for resolving potential circular references
+2018-01-30 09:26:11.591 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'callLogDao': ResourceElement for private org.mybatis.spring.SqlSessionTemplate com.gtshgame.db.dao.impl.CallLogDaoImpl.houtaiSqlSessionTemplate
+2018-01-30 09:26:11.592 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'houtaiSqlSessionTemplate'
+2018-01-30 09:26:11.598 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'houtaiSqlSessionFactory'
+2018-01-30 09:26:11.598 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'houtaiSqlSessionFactory'
+2018-01-30 09:26:11.607 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2018-01-30 09:26:11.609 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'houtaiSqlSessionFactory' to allow for resolving potential circular references
+2018-01-30 09:26:11.618 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSourceHoutai'
+2018-01-30 09:26:11.619 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'dataSourceHoutai'
+2018-01-30 09:26:11.626 [main] DEBUG com.atomikos.logging.LoggerFactory - Using Slf4J for logging.
+2018-01-30 09:26:11.627 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'dataSourceHoutai' to allow for resolving potential circular references
+2018-01-30 09:26:11.647 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking init method  'init' on bean with name 'dataSourceHoutai'
+2018-01-30 09:26:12.087 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.088 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'dataSourceHoutai'
+2018-01-30 09:26:12.091 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'houtaiSqlSessionFactory'
+2018-01-30 09:26:12.259 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis/mybatis-houtai-config.xml]'
+2018-01-30 09:26:12.260 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'mapperLocations' was not specified or no matching resources found
+2018-01-30 09:26:12.261 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.262 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'houtaiSqlSessionFactory'
+2018-01-30 09:26:12.262 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.278 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'houtaiSqlSessionTemplate'
+2018-01-30 09:26:12.279 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.281 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'callLogDao'
+2018-01-30 09:26:12.281 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'orderFirstChargeLogDao'
+2018-01-30 09:26:12.281 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'orderFirstChargeLogDao'
+2018-01-30 09:26:12.282 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.gtshgame.db.dao.impl.OrderFirstChargeLogDaoImpl]: ResourceElement for private org.mybatis.spring.SqlSessionTemplate com.gtshgame.db.dao.impl.OrderFirstChargeLogDaoImpl.houtaiSqlSessionTemplate
+2018-01-30 09:26:12.282 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'orderFirstChargeLogDao' to allow for resolving potential circular references
+2018-01-30 09:26:12.286 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'orderFirstChargeLogDao': ResourceElement for private org.mybatis.spring.SqlSessionTemplate com.gtshgame.db.dao.impl.OrderFirstChargeLogDaoImpl.houtaiSqlSessionTemplate
+2018-01-30 09:26:12.286 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'houtaiSqlSessionTemplate'
+2018-01-30 09:26:12.287 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'houtaiSqlSessionFactory'
+2018-01-30 09:26:12.287 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'houtaiSqlSessionTemplate'
+2018-01-30 09:26:12.287 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.288 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'orderFirstChargeLogDao'
+2018-01-30 09:26:12.288 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'vipMoneyDao'
+2018-01-30 09:26:12.288 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'vipMoneyDao'
+2018-01-30 09:26:12.290 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.gtshgame.db.dao.impl.VipMoneyDaoImpl]: ResourceElement for private org.mybatis.spring.SqlSessionTemplate com.gtshgame.db.dao.impl.VipMoneyDaoImpl.activitySqlSessionTemplate
+2018-01-30 09:26:12.290 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'vipMoneyDao' to allow for resolving potential circular references
+2018-01-30 09:26:12.293 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'vipMoneyDao': ResourceElement for private org.mybatis.spring.SqlSessionTemplate com.gtshgame.db.dao.impl.VipMoneyDaoImpl.activitySqlSessionTemplate
+2018-01-30 09:26:12.293 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'activitySqlSessionTemplate'
+2018-01-30 09:26:12.293 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'activitySqlSessionFactory'
+2018-01-30 09:26:12.293 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'activitySqlSessionFactory'
+2018-01-30 09:26:12.293 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'activitySqlSessionFactory' to allow for resolving potential circular references
+2018-01-30 09:26:12.294 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved classpath location [com/gtshgame/db/mapping/] to resources [URL [file:/C:/workspace/com.gtshgame.dao/target/classes/com/gtshgame/db/mapping/]]
+2018-01-30 09:26:12.294 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Looking for matching resources in directory tree [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\mapping]
+2018-01-30 09:26:12.294 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Searching directory [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\mapping] for files matching pattern [C:/workspace/com.gtshgame.dao/target/classes/com/gtshgame/db/mapping/*.xml]
+2018-01-30 09:26:12.295 [main] DEBUG o.s.c.i.s.PathMatchingResourcePatternResolver - Resolved location pattern [classpath*:com/gtshgame/db/mapping/*.xml] to resources [file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\mapping\mapper-atomikos-call_log.xml], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\mapping\OrderFirstChargeLogMapper.xml], file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\mapping\VipMoneyMapper.xml]]
+2018-01-30 09:26:12.295 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'dataSourceActivity'
+2018-01-30 09:26:12.295 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'dataSourceActivity'
+2018-01-30 09:26:12.296 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'dataSourceActivity' to allow for resolving potential circular references
+2018-01-30 09:26:12.296 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking init method  'init' on bean with name 'dataSourceActivity'
+2018-01-30 09:26:12.364 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.364 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'dataSourceActivity'
+2018-01-30 09:26:12.364 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'activitySqlSessionFactory'
+2018-01-30 09:26:12.364 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Property `configuration` or 'configLocation' not specified, using default MyBatis Configuration
+2018-01-30 09:26:12.373 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\mapping\mapper-atomikos-call_log.xml]'
+2018-01-30 09:26:12.385 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\mapping\OrderFirstChargeLogMapper.xml]'
+2018-01-30 09:26:12.394 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\workspace\com.gtshgame.dao\target\classes\com\gtshgame\db\mapping\VipMoneyMapper.xml]'
+2018-01-30 09:26:12.394 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.394 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'activitySqlSessionFactory'
+2018-01-30 09:26:12.394 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.395 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.395 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'activitySqlSessionTemplate'
+2018-01-30 09:26:12.395 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.396 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'vipMoneyDao'
+2018-01-30 09:26:12.396 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'testServiceImpl'
+2018-01-30 09:26:12.396 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'testServiceImpl'
+2018-01-30 09:26:12.432 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.gtshgame.service.impl.TestServiceImpl]: AutowiredFieldElement for private com.gtshgame.db.dao.VipMoneyDao com.gtshgame.service.impl.TestServiceImpl.vipMoneyMapper
+2018-01-30 09:26:12.432 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.gtshgame.service.impl.TestServiceImpl]: AutowiredFieldElement for private com.gtshgame.db.dao.OrderFirstChargeLogDao com.gtshgame.service.impl.TestServiceImpl.orderFirstChargeLogMapper
+2018-01-30 09:26:12.432 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.gtshgame.service.impl.TestServiceImpl]: AutowiredFieldElement for private com.gtshgame.db.dao.CallLogDao com.gtshgame.service.impl.TestServiceImpl.callLogDao
+2018-01-30 09:26:12.432 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'testServiceImpl' to allow for resolving potential circular references
+2018-01-30 09:26:12.434 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'testServiceImpl': AutowiredFieldElement for private com.gtshgame.db.dao.VipMoneyDao com.gtshgame.service.impl.TestServiceImpl.vipMoneyMapper
+2018-01-30 09:26:12.438 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'vipMoneyDao'
+2018-01-30 09:26:12.438 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'testServiceImpl' to bean named 'vipMoneyDao'
+2018-01-30 09:26:12.438 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'testServiceImpl': AutowiredFieldElement for private com.gtshgame.db.dao.OrderFirstChargeLogDao com.gtshgame.service.impl.TestServiceImpl.orderFirstChargeLogMapper
+2018-01-30 09:26:12.439 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'orderFirstChargeLogDao'
+2018-01-30 09:26:12.439 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'testServiceImpl' to bean named 'orderFirstChargeLogDao'
+2018-01-30 09:26:12.439 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'testServiceImpl': AutowiredFieldElement for private com.gtshgame.db.dao.CallLogDao com.gtshgame.service.impl.TestServiceImpl.callLogDao
+2018-01-30 09:26:12.439 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'callLogDao'
+2018-01-30 09:26:12.439 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'testServiceImpl' to bean named 'callLogDao'
+2018-01-30 09:26:12.439 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.441 [main] DEBUG o.s.t.a.AnnotationTransactionAttributeSource - Adding transactional method 'TestServiceImpl.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2018-01-30 09:26:12.446 [main] DEBUG o.s.a.f.a.InfrastructureAdvisorAutoProxyCreator - Creating implicit proxy for bean 'testServiceImpl' with 0 common interceptors and 1 specific interceptors
+2018-01-30 09:26:12.447 [main] DEBUG o.s.aop.framework.JdkDynamicAopProxy - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.gtshgame.service.impl.TestServiceImpl@57576994]
+2018-01-30 09:26:12.450 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'testServiceImpl'
+2018-01-30 09:26:12.450 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'propertyConfigurer'
+2018-01-30 09:26:12.450 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSourceHoutai'
+2018-01-30 09:26:12.450 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'dataSourceActivity'
+2018-01-30 09:26:12.450 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'houtaiSqlSessionFactory'
+2018-01-30 09:26:12.451 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'activitySqlSessionFactory'
+2018-01-30 09:26:12.451 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'atomikosTransactionManager'
+2018-01-30 09:26:12.451 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'atomikosTransactionManager'
+2018-01-30 09:26:12.454 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'atomikosTransactionManager' to allow for resolving potential circular references
+2018-01-30 09:26:12.458 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking init method  'init' on bean with name 'atomikosTransactionManager'
+2018-01-30 09:26:12.554 [main] DEBUG c.a.r.imp.FileSystemRepository - baseDir ./
+2018-01-30 09:26:12.554 [main] DEBUG c.a.r.imp.FileSystemRepository - baseName tmlog
+2018-01-30 09:26:12.555 [main] DEBUG c.a.r.imp.FileSystemRepository - LogFileLock com.atomikos.persistence.imp.LogFileLock@13d4992d
+2018-01-30 09:26:12.586 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.586 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'atomikosTransactionManager'
+2018-01-30 09:26:12.586 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'atomikosUserTransaction'
+2018-01-30 09:26:12.586 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'atomikosUserTransaction'
+2018-01-30 09:26:12.587 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'atomikosUserTransaction' to allow for resolving potential circular references
+2018-01-30 09:26:12.590 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.590 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'atomikosUserTransaction'
+2018-01-30 09:26:12.590 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'springTransactionManager'
+2018-01-30 09:26:12.590 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'springTransactionManager'
+2018-01-30 09:26:12.598 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'springTransactionManager' to allow for resolving potential circular references
+2018-01-30 09:26:12.603 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'atomikosTransactionManager'
+2018-01-30 09:26:12.603 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'atomikosUserTransaction'
+2018-01-30 09:26:12.603 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'springTransactionManager'
+2018-01-30 09:26:12.604 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.604 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'springTransactionManager'
+2018-01-30 09:26:12.604 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2018-01-30 09:26:12.604 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2018-01-30 09:26:12.604 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory' to allow for resolving potential circular references
+2018-01-30 09:26:12.607 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.607 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2018-01-30 09:26:12.607 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2018-01-30 09:26:12.607 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2018-01-30 09:26:12.607 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-01-30 09:26:12.607 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-01-30 09:26:12.609 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+2018-01-30 09:26:12.616 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2018-01-30 09:26:12.617 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-01-30 09:26:12.617 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-01-30 09:26:12.617 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.618 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'b_vertx_FirstCharge_FirstCharge_Json_Handler'
+2018-01-30 09:26:12.618 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'b_vertx_FirstCharge_FirstCharge_Json_Handler'
+2018-01-30 09:26:12.623 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'b_vertx_FirstCharge_FirstCharge_Json_Handler' to allow for resolving potential circular references
+2018-01-30 09:26:12.626 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.627 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'b_vertx_FirstCharge_FirstCharge_Json_Handler'
+2018-01-30 09:26:12.628 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'b_vertx_FirstCharge_FirstCharge_MsgPack_Handler'
+2018-01-30 09:26:12.628 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'b_vertx_FirstCharge_FirstCharge_MsgPack_Handler'
+2018-01-30 09:26:12.661 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'b_vertx_FirstCharge_FirstCharge_MsgPack_Handler' to allow for resolving potential circular references
+2018-01-30 09:26:12.664 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.664 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'b_vertx_FirstCharge_FirstCharge_MsgPack_Handler'
+2018-01-30 09:26:12.664 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge'
+2018-01-30 09:26:12.664 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge'
+2018-01-30 09:26:12.668 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge' to allow for resolving potential circular references
+2018-01-30 09:26:12.671 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.671 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge'
+2018-01-30 09:26:12.671 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'b_vertx_VipChargeInfo_VipChargeInfo_Json_Handler'
+2018-01-30 09:26:12.671 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'b_vertx_VipChargeInfo_VipChargeInfo_Json_Handler'
+2018-01-30 09:26:12.672 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'b_vertx_VipChargeInfo_VipChargeInfo_Json_Handler' to allow for resolving potential circular references
+2018-01-30 09:26:12.674 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.674 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'b_vertx_VipChargeInfo_VipChargeInfo_Json_Handler'
+2018-01-30 09:26:12.675 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'b_vertx_VipChargeInfo_VipChargeInfo_MsgPack_Handler'
+2018-01-30 09:26:12.675 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'b_vertx_VipChargeInfo_VipChargeInfo_MsgPack_Handler'
+2018-01-30 09:26:12.675 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'b_vertx_VipChargeInfo_VipChargeInfo_MsgPack_Handler' to allow for resolving potential circular references
+2018-01-30 09:26:12.678 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.678 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'b_vertx_VipChargeInfo_VipChargeInfo_MsgPack_Handler'
+2018-01-30 09:26:12.678 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-30 09:26:12.678 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-30 09:26:12.680 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo' to allow for resolving potential circular references
+2018-01-30 09:26:12.683 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.683 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'com.gtshgame.vertx.beans.Bean_Vertx_VipChargeInfo_VipChargeInfo'
+2018-01-30 09:26:12.683 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'FirstCharge_bean_FirstCharge'
+2018-01-30 09:26:12.683 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'FirstCharge_bean_FirstCharge'
+2018-01-30 09:26:12.683 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Registered injected element on class [com.gtshgame.vertx.bean.logics.Bean_Logic_FirstCharge_FirstCharge]: AutowiredFieldElement for private com.gtshgame.service.TestService com.gtshgame.vertx.bean.logics.Bean_Logic_FirstCharge_FirstCharge.testService
+2018-01-30 09:26:12.683 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'FirstCharge_bean_FirstCharge' to allow for resolving potential circular references
+2018-01-30 09:26:12.687 [main] DEBUG o.s.b.f.annotation.InjectionMetadata - Processing injected element of bean 'FirstCharge_bean_FirstCharge': AutowiredFieldElement for private com.gtshgame.service.TestService com.gtshgame.vertx.bean.logics.Bean_Logic_FirstCharge_FirstCharge.testService
+2018-01-30 09:26:12.687 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'testServiceImpl'
+2018-01-30 09:26:12.687 [main] DEBUG o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'FirstCharge_bean_FirstCharge' to bean named 'testServiceImpl'
+2018-01-30 09:26:12.687 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.687 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'FirstCharge_bean_FirstCharge'
+2018-01-30 09:26:12.687 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'VipChargeInfo_bean_VipChargeInfo'
+2018-01-30 09:26:12.688 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'VipChargeInfo_bean_VipChargeInfo'
+2018-01-30 09:26:12.688 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'VipChargeInfo_bean_VipChargeInfo' to allow for resolving potential circular references
+2018-01-30 09:26:12.690 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2018-01-30 09:26:12.690 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'VipChargeInfo_bean_VipChargeInfo'
+2018-01-30 09:26:12.690 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-01-30 09:26:12.690 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-01-30 09:26:12.690 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-01-30 09:26:12.690 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionalEventListenerFactory'
+2018-01-30 09:26:12.711 [main] DEBUG o.s.c.s.ClassPathXmlApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@42b02722]
+2018-01-30 09:26:12.711 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-01-30 09:26:12.713 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'houtaiSqlSessionFactory'
+2018-01-30 09:26:12.713 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'activitySqlSessionFactory'
+2018-01-30 09:26:12.716 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2018-01-30 09:26:12.716 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2018-01-30 09:26:12.716 [main] DEBUG o.s.c.e.PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2018-01-30 09:26:12.787 [main] DEBUG i.n.u.i.l.InternalLoggerFactory - Using SLF4J as the default logging framework
+2018-01-30 09:26:12.791 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+2018-01-30 09:26:12.792 [main] DEBUG io.netty.util.ResourceLeakDetector - -Dio.netty.leakDetection.maxRecords: 4
+2018-01-30 09:26:12.810 [main] DEBUG i.n.c.MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+2018-01-30 09:26:12.827 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Buffer.address: available
+2018-01-30 09:26:12.828 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+2018-01-30 09:26:12.828 [main] DEBUG i.n.util.internal.PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+2018-01-30 09:26:12.828 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.Bits.unaligned: true
+2018-01-30 09:26:12.828 [main] DEBUG i.n.util.internal.PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-01-30 09:26:12.829 [main] DEBUG i.n.util.internal.PlatformDependent - Platform: Windows
+2018-01-30 09:26:12.830 [main] DEBUG i.n.util.internal.PlatformDependent - Java version: 8
+2018-01-30 09:26:12.830 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noUnsafe: false
+2018-01-30 09:26:12.830 [main] DEBUG i.n.util.internal.PlatformDependent - sun.misc.Unsafe: available
+2018-01-30 09:26:12.830 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noJavassist: false
+2018-01-30 09:26:12.898 [main] DEBUG i.n.util.internal.PlatformDependent - Javassist: available
+2018-01-30 09:26:12.899 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.tmpdir: C:\Users\x\AppData\Local\Temp (java.io.tmpdir)
+2018-01-30 09:26:12.899 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-01-30 09:26:12.899 [main] DEBUG i.n.util.internal.PlatformDependent - -Dio.netty.noPreferDirect: false
+2018-01-30 09:26:12.899 [main] DEBUG i.n.util.internal.PlatformDependent - io.netty.maxDirectMemory: 3791650816 bytes
+2018-01-30 09:26:12.917 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.noKeySetOptimization: false
+2018-01-30 09:26:12.917 [main] DEBUG io.netty.channel.nio.NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-01-30 09:26:13.128 [main] DEBUG i.n.resolver.dns.DnsServerAddresses - Default DNS servers: [/61.128.128.68:53, /61.128.192.68:53, /192.168.169.1:53, /192.168.80.2:53] (sun.net.dns.ResolverConfiguration)
+2018-01-30 09:26:13.136 [main] DEBUG i.v.c.dns.impl.fix.DnsNameResolver - -Djava.net.preferIPv6Addresses: false
+2018-01-30 09:26:13.147 [main] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.io.netty.channel.socket.DatagramPacketMatcher
+2018-01-30 09:26:13.153 [main] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.io.netty.channel.AddressedEnvelopeMatcher
+2018-01-30 09:26:13.254 [main] DEBUG io.netty.util.NetUtil - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+2018-01-30 09:26:13.255 [main] DEBUG io.netty.util.NetUtil - \proc\sys\net\core\somaxconn: 200 (non-existent)
+2018-01-30 09:26:13.285 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-01-30 09:26:13.285 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'propertyConfigurer'
+2018-01-30 09:26:13.685 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'b_vertx_FirstCharge_FirstCharge_MsgPack_Handler'
+2018-01-30 09:26:13.685 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'b_vertx_FirstCharge_FirstCharge_Json_Handler'
+2018-01-30 09:26:13.687 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'b_vertx_VipChargeInfo_VipChargeInfo_MsgPack_Handler'
+2018-01-30 09:26:13.687 [main] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'b_vertx_VipChargeInfo_VipChargeInfo_Json_Handler'
+2018-01-30 09:26:13.692 [main] DEBUG com.gtshgame.App - ****************** http server **************************9890
+2018-01-30 09:26:13.721 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+2018-01-30 09:26:13.721 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+2018-01-30 09:26:13.721 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+2018-01-30 09:26:13.722 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 11
+2018-01-30 09:26:13.722 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 16777216
+2018-01-30 09:26:13.722 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.tinyCacheSize: 512
+2018-01-30 09:26:13.722 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+2018-01-30 09:26:13.722 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+2018-01-30 09:26:13.722 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-01-30 09:26:13.722 [main] DEBUG i.n.buffer.PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-01-30 09:26:13.755 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.processId: 9504 (auto-detected)
+2018-01-30 09:26:13.897 [main] DEBUG io.netty.channel.DefaultChannelId - -Dio.netty.machineId: 34:97:f6:ff:fe:90:67:fe (auto-detected)
+2018-01-30 09:26:13.897 [main] DEBUG i.n.util.internal.ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0xbe29ddd348255501
+2018-01-30 09:26:13.922 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.allocator.type: pooled
+2018-01-30 09:26:13.922 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 65536
+2018-01-30 09:26:13.922 [main] DEBUG io.netty.buffer.ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-01-30 09:26:13.927 [main] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.java.net.InetSocketAddressMatcher
+2018-01-30 09:26:13.934 [main] DEBUG com.gtshgame.App - 启动服务............
+2018-01-30 09:26:22.078 [vert.x-eventloop-thread-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.maxCapacity: 262144
+2018-01-30 09:26:22.078 [vert.x-eventloop-thread-2] DEBUG io.netty.util.Recycler - -Dio.netty.recycler.linkCapacity: 16
+2018-01-30 09:26:22.092 [vert.x-eventloop-thread-2] DEBUG io.netty.buffer.AbstractByteBuf - -Dio.netty.buffer.bytebuf.checkAccessible: true
+2018-01-30 09:26:22.187 [vert.x-eventloop-thread-2] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.io.netty.handler.codec.http.HttpRequestMatcher
+2018-01-30 09:26:22.189 [vert.x-eventloop-thread-2] DEBUG i.n.u.i.JavassistTypeParameterMatcherGenerator - Generated: io.netty.util.internal.__matchers__.io.netty.handler.codec.http.HttpObjectMatcher
+2018-01-30 09:26:25.305 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge'
+2018-01-30 09:26:25.305 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'FirstCharge_bean_FirstCharge'
+2018-01-30 09:26:25.305 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2018-01-30 09:26:25.309 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'springTransactionManager'
+2018-01-30 09:26:25.313 [vert.x-worker-thread-0] DEBUG o.s.t.jta.JtaTransactionManager - Creating new transaction with name [com.gtshgame.service.impl.TestServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2018-01-30 09:26:25.332 [vert.x-worker-thread-0] DEBUG c.a.i.i.CompositeTransactionManagerImp - createCompositeTransaction ( 10000 ): created new ROOT transaction with id 192.168.10.128.tm151727558531300001
+2018-01-30 09:26:25.337 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-01-30 09:26:25.343 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f14effa]
+2018-01-30 09:26:25.422 [vert.x-worker-thread-0] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2018-01-30 09:26:25.422 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AbstractDataSourceBean - AtomikosDataSoureBean 'houtai': getConnection()...
+2018-01-30 09:26:25.496 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling toString...
+2018-01-30 09:26:25.497 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling toString...
+2018-01-30 09:26:25.497 [vert.x-worker-thread-0] DEBUG o.s.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+2018-01-30 09:26:25.499 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling getAutoCommit...
+2018-01-30 09:26:25.499 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling toString...
+2018-01-30 09:26:25.499 [vert.x-worker-thread-0] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469] will be managed by Spring
+2018-01-30 09:26:25.503 [vert.x-worker-thread-0] DEBUG atomikoscallLogDAO.insert - ==>  Preparing: INSERT INTO call_log ( call_log_id ,call_log_name ,call_s_time ,call_e_time ,call_result ,call_nbr ) VALUES ( ? ,? ,? ,? ,? ,? ) 
+2018-01-30 09:26:25.506 [vert.x-worker-thread-0] DEBUG c.a.i.imp.CompositeTransactionImp - addParticipant ( XAResourceTransaction: 3139322E3136382E31302E3132382E746D313531373237353538353331333030303031:3139322E3136382E31302E3132382E746D31 ) for transaction 192.168.10.128.tm151727558531300001
+2018-01-30 09:26:25.507 [vert.x-worker-thread-0] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.start ( 3139322E3136382E31302E3132382E746D313531373237353538353331333030303031:3139322E3136382E31302E3132382E746D31 , XAResource.TMNOFLAGS ) on resource houtai represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@4c946bdc
+2018-01-30 09:26:25.508 [vert.x-worker-thread-0] DEBUG c.a.i.imp.CompositeTransactionImp - registerSynchronization ( com.atomikos.jdbc.AtomikosConnectionProxy$JdbcRequeueSynchronization@b296afc8 ) for transaction 192.168.10.128.tm151727558531300001
+2018-01-30 09:26:25.508 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling prepareStatement(INSERT INTO call_log (
+		 
+		  call_log_id
+			,call_log_name
+			,call_s_time
+			,call_e_time
+			,call_result
+			,call_nbr 
+	 
+    ) VALUES (
+		 
+		  ?
+			,?
+			,?
+			,?
+			,?
+			,? 
+	 
+    ))...
+2018-01-30 09:26:25.536 [vert.x-worker-thread-0] DEBUG atomikoscallLogDAO.insert - ==> Parameters: 8b2915e798554218aa8b4306161d80dc(String), A(String), 2018-01-30 09:26:25.334(Timestamp), 2018-01-30 09:26:25.334(Timestamp), 测试(String), 007(String)
+2018-01-30 09:26:25.539 [vert.x-worker-thread-0] DEBUG atomikoscallLogDAO.insert - <==    Updates: 1
+2018-01-30 09:26:25.539 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f14effa]
+2018-01-30 09:26:25.539 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-01-30 09:26:25.539 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31719334]
+2018-01-30 09:26:25.541 [vert.x-worker-thread-0] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2018-01-30 09:26:25.541 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AbstractDataSourceBean - AtomikosDataSoureBean 'activity': getConnection()...
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling toString...
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling toString...
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG o.s.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling getAutoCommit...
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling toString...
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98] will be managed by Spring
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG atomikosvipMoneyDao.insert - ==>  Preparing: INSERT INTO vip_money ( level ,money ,day ) VALUES ( ? ,? ,? ) 
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG c.a.i.imp.CompositeTransactionImp - addParticipant ( XAResourceTransaction: 3139322E3136382E31302E3132382E746D313531373237353538353331333030303031:3139322E3136382E31302E3132382E746D32 ) for transaction 192.168.10.128.tm151727558531300001
+2018-01-30 09:26:25.543 [vert.x-worker-thread-0] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.start ( 3139322E3136382E31302E3132382E746D313531373237353538353331333030303031:3139322E3136382E31302E3132382E746D32 , XAResource.TMNOFLAGS ) on resource activity represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@543c1d
+2018-01-30 09:26:25.544 [vert.x-worker-thread-0] DEBUG c.a.i.imp.CompositeTransactionImp - registerSynchronization ( com.atomikos.jdbc.AtomikosConnectionProxy$JdbcRequeueSynchronization@b296afc8 ) for transaction 192.168.10.128.tm151727558531300001
+2018-01-30 09:26:25.544 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling prepareStatement(INSERT INTO vip_money (
+		 
+		  level
+			,money
+			,day 
+	 
+    ) VALUES (
+		 
+		  ?
+			,?
+			,? 
+	 
+    ))...
+2018-01-30 09:26:25.545 [vert.x-worker-thread-0] DEBUG atomikosvipMoneyDao.insert - ==> Parameters: 15(Integer), 55.0(Double), 13(Integer)
+2018-01-30 09:26:25.546 [vert.x-worker-thread-0] DEBUG atomikosvipMoneyDao.insert - <==    Updates: 1
+2018-01-30 09:26:25.547 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31719334]
+2018-01-30 09:26:25.547 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f14effa] from current transaction
+2018-01-30 09:26:25.548 [vert.x-worker-thread-0] DEBUG a.insert - ==>  Preparing: INSERT INTO order_first_charge_log ( user_id ,order_no ) VALUES ( ? ,? ) 
+2018-01-30 09:26:25.548 [vert.x-worker-thread-0] DEBUG c.a.i.imp.CompositeTransactionImp - registerSynchronization ( com.atomikos.jdbc.AtomikosConnectionProxy$JdbcRequeueSynchronization@b296afc8 ) for transaction 192.168.10.128.tm151727558531300001
+2018-01-30 09:26:25.548 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling prepareStatement(INSERT INTO order_first_charge_log (
+		 
+		  user_id
+			,order_no 
+	 
+    ) VALUES (
+		 
+		  ?
+			,? 
+	 
+    ))...
+2018-01-30 09:26:25.548 [vert.x-worker-thread-0] DEBUG a.insert - ==> Parameters: 3(Integer), dfdsfs(String)
+2018-01-30 09:26:25.552 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f14effa]
+2018-01-30 09:26:25.560 [vert.x-worker-thread-0] DEBUG o.s.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+2018-01-30 09:26:25.560 [vert.x-worker-thread-0] DEBUG o.s.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-01-30 09:26:25.560 [vert.x-worker-thread-0] DEBUG o.s.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-01-30 09:26:25.562 [vert.x-worker-thread-0] DEBUG o.s.b.f.xml.DefaultDocumentLoader - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-01-30 09:26:25.564 [vert.x-worker-thread-0] DEBUG o.s.b.factory.xml.BeansDtdResolver - Found beans DTD [http://www.springframework.org/dtd/spring-beans-2.0.dtd] in classpath: spring-beans-2.0.dtd
+2018-01-30 09:26:25.568 [vert.x-worker-thread-0] DEBUG o.s.b.f.x.DefaultBeanDefinitionDocumentReader - Loading bean definitions
+2018-01-30 09:26:25.572 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'DB2'
+2018-01-30 09:26:25.572 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'DB2'
+2018-01-30 09:26:25.573 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'DB2' to allow for resolving potential circular references
+2018-01-30 09:26:25.581 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'DB2'
+2018-01-30 09:26:25.581 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Derby'
+2018-01-30 09:26:25.581 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'Derby'
+2018-01-30 09:26:25.581 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'Derby' to allow for resolving potential circular references
+2018-01-30 09:26:25.582 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'Derby'
+2018-01-30 09:26:25.582 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'H2'
+2018-01-30 09:26:25.582 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'H2'
+2018-01-30 09:26:25.582 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'H2' to allow for resolving potential circular references
+2018-01-30 09:26:25.583 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'H2'
+2018-01-30 09:26:25.583 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'HSQL'
+2018-01-30 09:26:25.583 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'HSQL'
+2018-01-30 09:26:25.583 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'HSQL' to allow for resolving potential circular references
+2018-01-30 09:26:25.583 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'HSQL'
+2018-01-30 09:26:25.583 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Informix'
+2018-01-30 09:26:25.583 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'Informix'
+2018-01-30 09:26:25.583 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'Informix' to allow for resolving potential circular references
+2018-01-30 09:26:25.584 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'Informix'
+2018-01-30 09:26:25.584 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'MS-SQL'
+2018-01-30 09:26:25.584 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'MS-SQL'
+2018-01-30 09:26:25.584 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'MS-SQL' to allow for resolving potential circular references
+2018-01-30 09:26:25.584 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'MS-SQL'
+2018-01-30 09:26:25.584 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'MySQL'
+2018-01-30 09:26:25.584 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'MySQL'
+2018-01-30 09:26:25.584 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'MySQL' to allow for resolving potential circular references
+2018-01-30 09:26:25.585 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'MySQL'
+2018-01-30 09:26:25.585 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Oracle'
+2018-01-30 09:26:25.585 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'Oracle'
+2018-01-30 09:26:25.585 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'Oracle' to allow for resolving potential circular references
+2018-01-30 09:26:25.585 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'Oracle'
+2018-01-30 09:26:25.585 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'PostgreSQL'
+2018-01-30 09:26:25.586 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'PostgreSQL'
+2018-01-30 09:26:25.586 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'PostgreSQL' to allow for resolving potential circular references
+2018-01-30 09:26:25.586 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'PostgreSQL'
+2018-01-30 09:26:25.586 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Sybase'
+2018-01-30 09:26:25.586 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'Sybase'
+2018-01-30 09:26:25.586 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'Sybase' to allow for resolving potential circular references
+2018-01-30 09:26:25.588 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'Sybase'
+2018-01-30 09:26:25.588 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating shared instance of singleton bean 'Hana'
+2018-01-30 09:26:25.588 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Creating instance of bean 'Hana'
+2018-01-30 09:26:25.588 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Eagerly caching bean 'Hana' to allow for resolving potential circular references
+2018-01-30 09:26:25.589 [vert.x-worker-thread-0] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Finished creating instance of bean 'Hana'
+2018-01-30 09:26:25.589 [vert.x-worker-thread-0] DEBUG o.s.j.support.SQLErrorCodesFactory - Looking up default SQLErrorCodes for DataSource [AtomikosDataSoureBean 'houtai']
+2018-01-30 09:26:25.591 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling getMetaData...
+2018-01-30 09:26:25.592 [vert.x-worker-thread-0] DEBUG o.s.j.support.SQLErrorCodesFactory - Database product name cached for DataSource [com.atomikos.jdbc.AtomikosDataSourceBean@22e357dc]: name is 'MySQL'
+2018-01-30 09:26:25.593 [vert.x-worker-thread-0] DEBUG o.s.j.support.SQLErrorCodesFactory - SQL error codes for 'MySQL' found
+2018-01-30 09:26:25.593 [vert.x-worker-thread-0] DEBUG o.s.j.s.SQLErrorCodeSQLExceptionTranslator - Translating SQLException with SQL state '23000', error code '1062', message [Duplicate entry '3' for key 'PRIMARY']; SQL was [] for task [
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+### The error may involve atomikosorderFirstChargeLogDao.insert-Inline
+### The error occurred while setting parameters
+### SQL: INSERT INTO order_first_charge_log (         user_id    ,order_no         ) VALUES (         ?    ,?         )
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '3' for key 'PRIMARY'
+]
+2018-01-30 09:26:25.593 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f14effa]
+2018-01-30 09:26:25.593 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f14effa]
+2018-01-30 09:26:25.594 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31719334]
+2018-01-30 09:26:25.594 [vert.x-worker-thread-0] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@31719334]
+2018-01-30 09:26:25.594 [vert.x-worker-thread-0] DEBUG o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+2018-01-30 09:26:25.598 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: close()...
+2018-01-30 09:26:25.598 [vert.x-worker-thread-0] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.end ( 3139322E3136382E31302E3132382E746D313531373237353538353331333030303031:3139322E3136382E31302E3132382E746D31 , XAResource.TMSUCCESS ) on resource houtai represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@4c946bdc
+2018-01-30 09:26:25.601 [vert.x-worker-thread-0] DEBUG o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+2018-01-30 09:26:25.601 [vert.x-worker-thread-0] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: close()...
+2018-01-30 09:26:25.635 [vert.x-worker-thread-0] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.end ( 3139322E3136382E31302E3132382E746D313531373237353538353331333030303031:3139322E3136382E31302E3132382E746D32 , XAResource.TMSUCCESS ) on resource activity represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@543c1d
+2018-01-30 09:26:25.640 [vert.x-worker-thread-0] DEBUG o.s.t.jta.JtaTransactionManager - Initiating transaction rollback
+2018-01-30 09:26:25.643 [vert.x-worker-thread-0] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.rollback ( 3139322E3136382E31302E3132382E746D313531373237353538353331333030303031:3139322E3136382E31302E3132382E746D31 ) on resource houtai represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@4c946bdc
+2018-01-30 09:26:25.646 [vert.x-worker-thread-0] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.rollback ( 3139322E3136382E31302E3132382E746D313531373237353538353331333030303031:3139322E3136382E31302E3132382E746D32 ) on resource activity represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@543c1d
+2018-01-30 09:26:25.650 [vert.x-worker-thread-0] DEBUG c.a.i.imp.CompositeTransactionImp - rollback() done of transaction 192.168.10.128.tm151727558531300001
+2018-01-30 09:26:25.650 [vert.x-worker-thread-0] DEBUG c.a.i.imp.CompositeTransactionImp - rollback() done of transaction 192.168.10.128.tm151727558531300001
+2018-01-30 09:26:55.101 [vert.x-worker-thread-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'com.gtshgame.vertx.beans.Bean_Vertx_FirstCharge_FirstCharge'
+2018-01-30 09:26:55.101 [vert.x-worker-thread-1] DEBUG o.s.b.f.s.DefaultListableBeanFactory - Returning cached instance of singleton bean 'FirstCharge_bean_FirstCharge'
+2018-01-30 09:26:55.101 [vert.x-worker-thread-1] DEBUG o.s.t.jta.JtaTransactionManager - Creating new transaction with name [com.gtshgame.service.impl.TestServiceImpl.update]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT; ''
+2018-01-30 09:26:55.101 [vert.x-worker-thread-1] DEBUG c.a.i.i.CompositeTransactionManagerImp - createCompositeTransaction ( 10000 ): created new ROOT transaction with id 192.168.10.128.tm151727561510100002
+2018-01-30 09:26:55.102 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-01-30 09:26:55.102 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2900d92f]
+2018-01-30 09:26:55.104 [vert.x-worker-thread-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2018-01-30 09:26:55.104 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AbstractDataSourceBean - AtomikosDataSoureBean 'houtai': getConnection()...
+2018-01-30 09:26:55.105 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling toString...
+2018-01-30 09:26:55.105 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling toString...
+2018-01-30 09:26:55.105 [vert.x-worker-thread-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+2018-01-30 09:26:55.105 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling getAutoCommit...
+2018-01-30 09:26:55.105 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling toString...
+2018-01-30 09:26:55.105 [vert.x-worker-thread-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469] will be managed by Spring
+2018-01-30 09:26:55.106 [vert.x-worker-thread-1] DEBUG atomikoscallLogDAO.insert - ==>  Preparing: INSERT INTO call_log ( call_log_id ,call_log_name ,call_s_time ,call_e_time ,call_result ,call_nbr ) VALUES ( ? ,? ,? ,? ,? ,? ) 
+2018-01-30 09:26:55.106 [vert.x-worker-thread-1] DEBUG c.a.i.imp.CompositeTransactionImp - addParticipant ( XAResourceTransaction: 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D33 ) for transaction 192.168.10.128.tm151727561510100002
+2018-01-30 09:26:55.106 [vert.x-worker-thread-1] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.start ( 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D33 , XAResource.TMNOFLAGS ) on resource houtai represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@4c946bdc
+2018-01-30 09:26:55.106 [vert.x-worker-thread-1] DEBUG c.a.i.imp.CompositeTransactionImp - registerSynchronization ( com.atomikos.jdbc.AtomikosConnectionProxy$JdbcRequeueSynchronization@91670474 ) for transaction 192.168.10.128.tm151727561510100002
+2018-01-30 09:26:55.106 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling prepareStatement(INSERT INTO call_log (
+		 
+		  call_log_id
+			,call_log_name
+			,call_s_time
+			,call_e_time
+			,call_result
+			,call_nbr 
+	 
+    ) VALUES (
+		 
+		  ?
+			,?
+			,?
+			,?
+			,?
+			,? 
+	 
+    ))...
+2018-01-30 09:26:55.107 [vert.x-worker-thread-1] DEBUG atomikoscallLogDAO.insert - ==> Parameters: 2138fba9df7d4270a6a3d5cec42d6be9(String), A(String), 2018-01-30 09:26:55.102(Timestamp), 2018-01-30 09:26:55.102(Timestamp), 测试(String), 007(String)
+2018-01-30 09:26:55.108 [vert.x-worker-thread-1] DEBUG atomikoscallLogDAO.insert - <==    Updates: 1
+2018-01-30 09:26:55.108 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2900d92f]
+2018-01-30 09:26:55.108 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-01-30 09:26:55.108 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661c378]
+2018-01-30 09:26:55.109 [vert.x-worker-thread-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+2018-01-30 09:26:55.109 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AbstractDataSourceBean - AtomikosDataSoureBean 'activity': getConnection()...
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling toString...
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling toString...
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Registering transaction synchronization for JDBC Connection
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling getAutoCommit...
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling toString...
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98] will be managed by Spring
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG atomikosvipMoneyDao.insert - ==>  Preparing: INSERT INTO vip_money ( level ,money ,day ) VALUES ( ? ,? ,? ) 
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG c.a.i.imp.CompositeTransactionImp - addParticipant ( XAResourceTransaction: 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D34 ) for transaction 192.168.10.128.tm151727561510100002
+2018-01-30 09:26:55.110 [vert.x-worker-thread-1] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.start ( 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D34 , XAResource.TMNOFLAGS ) on resource activity represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@543c1d
+2018-01-30 09:26:55.111 [vert.x-worker-thread-1] DEBUG c.a.i.imp.CompositeTransactionImp - registerSynchronization ( com.atomikos.jdbc.AtomikosConnectionProxy$JdbcRequeueSynchronization@91670474 ) for transaction 192.168.10.128.tm151727561510100002
+2018-01-30 09:26:55.111 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: calling prepareStatement(INSERT INTO vip_money (
+		 
+		  level
+			,money
+			,day 
+	 
+    ) VALUES (
+		 
+		  ?
+			,?
+			,? 
+	 
+    ))...
+2018-01-30 09:26:55.111 [vert.x-worker-thread-1] DEBUG atomikosvipMoneyDao.insert - ==> Parameters: 15(Integer), 55.0(Double), 13(Integer)
+2018-01-30 09:26:55.112 [vert.x-worker-thread-1] DEBUG atomikosvipMoneyDao.insert - <==    Updates: 1
+2018-01-30 09:26:55.112 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661c378]
+2018-01-30 09:26:55.112 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2900d92f] from current transaction
+2018-01-30 09:26:55.113 [vert.x-worker-thread-1] DEBUG a.insert - ==>  Preparing: INSERT INTO order_first_charge_log ( user_id ,order_no ) VALUES ( ? ,? ) 
+2018-01-30 09:26:55.113 [vert.x-worker-thread-1] DEBUG c.a.i.imp.CompositeTransactionImp - registerSynchronization ( com.atomikos.jdbc.AtomikosConnectionProxy$JdbcRequeueSynchronization@91670474 ) for transaction 192.168.10.128.tm151727561510100002
+2018-01-30 09:26:55.113 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: calling prepareStatement(INSERT INTO order_first_charge_log (
+		 
+		  user_id
+			,order_no 
+	 
+    ) VALUES (
+		 
+		  ?
+			,? 
+	 
+    ))...
+2018-01-30 09:26:55.113 [vert.x-worker-thread-1] DEBUG a.insert - ==> Parameters: 3(Integer), dfdsfs(String)
+2018-01-30 09:26:55.114 [vert.x-worker-thread-1] DEBUG a.insert - <==    Updates: 1
+2018-01-30 09:26:55.114 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2900d92f]
+2018-01-30 09:26:55.114 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2900d92f]
+2018-01-30 09:26:55.114 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661c378]
+2018-01-30 09:26:55.114 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2900d92f]
+2018-01-30 09:26:55.114 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2900d92f]
+2018-01-30 09:26:55.114 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661c378]
+2018-01-30 09:26:55.114 [vert.x-worker-thread-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@661c378]
+2018-01-30 09:26:55.119 [vert.x-worker-thread-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+2018-01-30 09:26:55.119 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@49f67469: close()...
+2018-01-30 09:26:55.119 [vert.x-worker-thread-1] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.end ( 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D33 , XAResource.TMSUCCESS ) on resource houtai represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@4c946bdc
+2018-01-30 09:26:55.119 [vert.x-worker-thread-1] DEBUG o.s.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+2018-01-30 09:26:55.120 [vert.x-worker-thread-1] DEBUG c.a.jdbc.AtomikosConnectionProxy - atomikos connection proxy for com.mysql.jdbc.jdbc2.optional.JDBC4ConnectionWrapper@197b5d98: close()...
+2018-01-30 09:26:55.120 [vert.x-worker-thread-1] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.end ( 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D34 , XAResource.TMSUCCESS ) on resource activity represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@543c1d
+2018-01-30 09:26:55.120 [vert.x-worker-thread-1] DEBUG o.s.t.jta.JtaTransactionManager - Initiating transaction commit
+2018-01-30 09:26:55.120 [vert.x-worker-thread-1] DEBUG c.a.i.imp.CompositeTransactionImp - commit() done (by application) of transaction 192.168.10.128.tm151727561510100002
+2018-01-30 09:26:55.124 [vert.x-worker-thread-1] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.prepare ( 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D33 ) returning OK on resource houtai represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@4c946bdc
+2018-01-30 09:26:55.126 [vert.x-worker-thread-1] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.prepare ( 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D34 ) returning OK on resource activity represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@543c1d
+2018-01-30 09:26:55.129 [vert.x-worker-thread-1] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.commit ( 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D33 , false ) on resource houtai represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@4c946bdc
+2018-01-30 09:26:55.131 [vert.x-worker-thread-1] DEBUG c.a.d.xa.XAResourceTransaction - XAResource.commit ( 3139322E3136382E31302E3132382E746D313531373237353631353130313030303032:3139322E3136382E31302E3132382E746D34 , false ) on resource activity represented by XAResource instance com.mysql.jdbc.jdbc2.optional.JDBC4MysqlXAConnection@543c1d

@@ -1,0 +1,13 @@
+2018-01-27 17:44:36.197 [main] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@3aefe5e5: startup date [Sat Jan 27 17:44:36 CST 2018]; root of context hierarchy
+2018-01-27 17:44:36.249 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [interfaces.xml]
+2018-01-27 17:44:36.430 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [autobean.xml]
+2018-01-27 17:44:36.446 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [bean_logic.xml]
+2018-01-27 17:44:36.459 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [mybaitsMapper.xml]
+2018-01-27 17:44:36.493 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [interfaces.xml]
+2018-01-27 17:44:36.781 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [sqlserver-jdbc-connection.properties]
+2018-01-27 17:44:40.049 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [sqlserver-jdbc-connection.properties]
+2018-01-27 17:44:40.433 [main] INFO  com.gtshgame.App - /api/FirstCharge/FirstCharge
+2018-01-27 17:44:40.434 [main] INFO  com.gtshgame.App - /api/json/FirstCharge/FirstCharge
+2018-01-27 17:44:40.435 [main] INFO  com.gtshgame.App - /api/VipChargeInfo/VipChargeInfo
+2018-01-27 17:44:40.435 [main] INFO  com.gtshgame.App - /api/json/VipChargeInfo/VipChargeInfo
+2018-01-27 17:44:45.213 [vert.x-worker-thread-0] INFO  com.gtshgame.App - {'objbitTmp':0}

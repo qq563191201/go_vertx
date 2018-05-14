@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="atomikosvipMoneyDao" >
+
+  <resultMap id="vipMoney_base" type="com.gtshgame.common.bean.VipMoney" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="level" property="level" jdbcType="INTEGER" />
+    <result column="money" property="money" jdbcType="DOUBLE" />
+    <result column="day" property="day" jdbcType="INTEGER" />
+  </resultMap>
+  
+  <insert id="insert" parameterType="java.util.Map">
+    INSERT INTO vip_money (
+		<include refid="sql_insert_column_list" />
+    ) VALUES (
+		<include refid="sql_insert_property_list" />
+    )
+	</insert> 
+
+	<sql id="sql_insert_column_list">
+		<trim prefix="" prefixOverrides=",">
+			<if test="entity.id != null">,id</if>
+			<if test="entity.level != null">,level</if>
+			<if test="entity.money != null">,money</if>
+			<if test="entity.day != null">,day</if>
+		</trim>
+	</sql>
+	<sql id="sql_insert_property_list">
+		<trim prefix="" prefixOverrides=",">
+			<if test="entity.id != null">,#{entity.id , jdbcType=INTEGER}</if>
+			<if test="entity.level != null">,#{entity.level , jdbcType=INTEGER}</if>
+			<if test="entity.money != null">,#{entity.money , jdbcType=DOUBLE}</if>
+			<if test="entity.day != null">,#{entity.day , jdbcType=INTEGER}</if>
+		</trim>
+	</sql>
+</mapper>

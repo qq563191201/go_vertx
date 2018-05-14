@@ -1,0 +1,12 @@
+2018-01-10 13:56:34.608 [main] INFO  o.s.c.s.ClassPathXmlApplicationContext - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@26653222: startup date [Wed Jan 10 13:56:34 CST 2018]; root of context hierarchy
+2018-01-10 13:56:34.739 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [interfaces.xml]
+2018-01-10 13:56:34.947 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [autobean.xml]
+2018-01-10 13:56:34.969 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [bean_logic.xml]
+2018-01-10 13:56:34.981 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [mybaitsMapper.xml]
+2018-01-10 13:56:34.995 [main] INFO  o.s.b.f.xml.XmlBeanDefinitionReader - Loading XML bean definitions from class path resource [interfaces.xml]
+2018-01-10 13:56:35.289 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [sqlserver-jdbc-connection.properties]
+2018-01-10 13:56:36.955 [main] INFO  o.s.b.f.c.PropertyPlaceholderConfigurer - Loading properties file from class path resource [sqlserver-jdbc-connection.properties]
+2018-01-10 13:56:37.345 [main] INFO  com.gojava.com.gojava.App - /api/FirstCharge/FirstCharge
+2018-01-10 13:56:37.346 [main] INFO  com.gojava.com.gojava.App - /api/json/FirstCharge/FirstCharge
+2018-01-10 13:56:37.347 [main] INFO  com.gojava.com.gojava.App - /api/VipChargeInfo/VipChargeInfo
+2018-01-10 13:56:37.347 [main] INFO  com.gojava.com.gojava.App - /api/json/VipChargeInfo/VipChargeInfo

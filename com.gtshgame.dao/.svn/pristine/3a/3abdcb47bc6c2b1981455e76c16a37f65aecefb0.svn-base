@@ -1,0 +1,41 @@
+  <link rel="stylesheet" href="./plugins/datatables/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="./dist/css/skins/_all-skins.min.css">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">捕鱼房间配置</h3>
+            </div>
+            <!-- /.box-header -->
+            <div id="datadiv" class="box-body">
+            
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+<!-- ./wrapper -->
+<!-- DataTables -->
+<script src="./plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="./plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="./plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="./plugins/fastclick/fastclick.js"></script>
+<script type="text/javascript" src="./js/fish.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+   // $("#example1").DataTable();
+  $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+
+</script>
+</body>
+</html>
